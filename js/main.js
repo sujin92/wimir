@@ -153,6 +153,13 @@ function sideMenu() {
   isOpen = !isOpen;
   if (isOpen) $("header").off("mouseleave", scrollPage);
   else $("header").on("mouseleave", scrollPage);
+  if (window.innerWidth < 581) {
+    if ($(menu).hasClass("active")) {
+      $("body").css("overflow", "hidden");
+    } else {
+      $("body").css("overflow", "auto");
+    }
+  }
 }
 
 // 모바일 전체메뉴

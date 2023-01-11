@@ -24,15 +24,17 @@ function header_on() {
 }
 
 function header_off() {
-  $(".innerHeader ").removeClass("on");
-  $(".innerHeader .gnb > li > .inner").removeClass("on");
+  if (!$(".side_menu").hasClass("active")) {
+    $(".innerHeader ").removeClass("on");
+    $(".innerHeader .gnb > li > .inner").removeClass("on");
 
-  if (!$("header").hasClass("activated")) {
-    document.getElementById("logoChange").src = "images/logo_white.png";
-    let textChanges = document.getElementsByClassName("textChange");
-    for (let i = 0; i < textChanges.length; i++) {
-      let textChange = textChanges.item(i);
-      textChange.style.color = "#ffffff";
+    if (!$("header").hasClass("activated")) {
+      document.getElementById("logoChange").src = "images/logo_white.png";
+      let textChanges = document.getElementsByClassName("textChange");
+      for (let i = 0; i < textChanges.length; i++) {
+        let textChange = textChanges.item(i);
+        textChange.style.color = "#ffffff";
+      }
     }
   }
 }

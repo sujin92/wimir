@@ -112,7 +112,6 @@ window.onload = function () {
 };
 
 // 퀵메뉴
-
 $(document).ready(function () {
   let currentPosition = parseInt($(".quickmenu").css("top"));
   $(window).scroll(function () {
@@ -157,7 +156,6 @@ function sideMenu() {
 // 모바일 전체메뉴
 $(function () {
   let windowWidth = $(window).width();
-
   if (windowWidth < 580) {
     const acoAco = $(".side_gnb li a");
 

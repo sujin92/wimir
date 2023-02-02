@@ -1,0 +1,558 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+form,
+input {
+  border: none;
+}
+
+/* companyPage css */
+#technology {
+  position: relative;
+  width: 100%;
+  color: #333333;
+}
+
+.technologyImg {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 550px;
+  background-position: center;
+  animation: grow 1s linear 1;
+}
+
+@keyframes grow {
+  0% {
+    background-size: 103% 550px;
+  }
+  100% {
+    background-size: 100% 550px;
+  }
+}
+
+.technologyTop {
+  position: relative;
+}
+
+.technologyTop h2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tabWrap {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  border-bottom: 1px solid #c1c1c1c1;
+}
+
+.tab {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.tab ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab ul li {
+  width: 400px;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tab ul li a {
+  height: 70px;
+  padding: 0 100px 21px;
+}
+
+.tab ul li .tablinks.active {
+  border-bottom: 3px solid #cd1319;
+}
+
+/* tab 컨텐츠 */
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 수행실적 */
+.resultSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resultText {
+  margin-bottom: 50px;
+}
+
+.resultText h2 {
+  padding: 150px 0 80px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.resultText h2 span {
+  color: #cd1319;
+  font-size: 48px;
+}
+
+.resultSearch {
+  margin-bottom: 70px;
+}
+
+.resultSearch .search {
+  border-bottom: 1px solid #c1c1c1;
+  font-size: 16px;
+  width: 400px;
+  padding: 0 0 10px 10px;
+}
+
+.resultSearch .search::placeholder {
+  color: #c1c1c1;
+}
+
+.resultSearch .search:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.resultSearch i {
+  position: absolute;
+  justify-content: right;
+  color: #cd1319;
+  font-size: 22px;
+  margin-left: 170px;
+  top: 878px;
+}
+
+.resultList .resultListTop {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #cd1319;
+  margin-bottom: 50px;
+}
+
+.resultList .resultListTop p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.resultList .resultListTop p span {
+  color: #cd1319;
+}
+
+.resultList .resultListTop select {
+  width: 200px;
+  border: 1px solid #c1c1c1;
+  box-sizing: border-box;
+  padding: 7px 13px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.resultList .resultListTop select option {
+  color: #c1c1c1;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.resultList .resultListBottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resultList .resultListBottom .listBox {
+  text-align: left;
+  position: relative;
+}
+
+.resultList .resultListBottom .listBox:hover .lineBottom {
+  width: 340px;
+  transition: all 1s;
+}
+
+.resultList .resultListBottom .listBox h4 {
+  font-size: 22px;
+  margin: 20px 0 50px 0;
+  color: #333333;
+}
+
+.resultList .resultListBottom .listBox span {
+  content: "";
+  position: absolute;
+  top: 408px;
+  height: 1px;
+  width: 340px;
+  background: #c1c1c1;
+}
+
+.resultList .resultListBottom .listBox .lineBottom {
+  background: #cd1319;
+  width: 60px;
+  height: 3px;
+  top: 407px;
+}
+
+.resultList .resultListBottom .listBox p {
+  margin-bottom: 50px;
+  color: #c1c1c1;
+}
+
+.resultList .listNumber {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 120px 0;
+}
+
+.resultList .listNumber a i {
+  color: #333333;
+}
+
+.resultList .listNumber p {
+  color: #cd1319;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+/* 인증현황 */
+.confirmInner {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.confirmInner .certified {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.confirmInner .certified h3 {
+  font-size: 24px;
+  background-color: #cd1319;
+  width: 180px;
+  border-radius: 20px;
+  padding: 7px 0 7px 35px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.confirmInner .certified img {
+  margin: 0 71px 20px 0;
+  filter: drop-shadow(4px 3px 3px #e0e0e0);
+}
+
+/* 자료실 */
+
+.noticeSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.noticeText {
+  margin-bottom: 50px;
+}
+
+.noticeText h2 {
+  padding: 150px 0 80px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.noticeText h2 span {
+  color: #cd1319;
+  font-size: 48px;
+}
+
+.noticeSearch {
+  margin-bottom: 70px;
+}
+
+.noticeSearch .search {
+  border-bottom: 1px solid #c1c1c1;
+  font-size: 16px;
+  width: 400px;
+  padding: 0 0 10px 10px;
+}
+
+.noticeSearch .search::placeholder {
+  color: #c1c1c1;
+}
+
+.noticeSearch .search:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.noticeSearch i {
+  position: absolute;
+  justify-content: right;
+  color: #cd1319;
+  font-size: 22px;
+  margin-left: 170px;
+  top: 878px;
+}
+
+.noticeList .noticeListTop {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #cd1319;
+}
+
+.noticeList .noticeListTop p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.noticeList .noticeListTop p span {
+  color: #cd1319;
+}
+
+.noticeList .noticeListTop select {
+  width: 200px;
+  border: 1px solid #c1c1c1;
+  box-sizing: border-box;
+  padding: 7px 13px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.noticeList .noticeListTop select option {
+  color: #c1c1c1;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.noticeListBottom ul {
+  display: flex;
+}
+
+.noticeListBottom ul li {
+  border-bottom: 1px solid #c1c1c1;
+  padding: 22px 0;
+}
+
+.noticeListBottom ul li a {
+  color: #333333;
+  font-size: 16px;
+}
+
+.noticeListBottom ul li:nth-child(1) {
+  width: 130px;
+}
+
+.noticeListBottom ul li:nth-child(2) {
+  width: 900px;
+}
+
+.noticeListBottom ul li:nth-child(3) {
+  width: 170px;
+}
+
+.noticeListBottom ul li:nth-child(3) a {
+  color: #757575;
+}
+
+.noticeListBottom .noticeTitle {
+  font-weight: 500;
+}
+
+.noticeListBottom .noticeTitle li:nth-child(3) a {
+  color: #333333;
+}
+
+.noticeListBottom .noticeList:hover {
+  background-color: #efefef;
+}
+
+.noticeListBottom .noticeList li:nth-child(2) {
+  text-align: left;
+}
+
+.noticeList .listNumber {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 120px 0;
+}
+
+.noticeList .listNumber i {
+  color: #333333;
+}
+
+.noticeList .listNumber p,
+i {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.noticeList .listNumber p {
+  color: #cd1319;
+  font-weight: 600;
+}

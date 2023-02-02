@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/page/main/index.css" />
+    <link rel="stylesheet" href="/page/communityPage/communityPage.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/favicon/apple-icon-180x180.png"
+    />
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!--animate style-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/cad96521f3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/subMenu.js"></script>
+    <script src="/js/tab.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <title>WIMIR</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+    <!-- 퀵메뉴 -->
+    <div class="quickmenu" id="quickmenu"></div>
+
+    <section id="community">
+      <div class="communityTop">
+        <li
+          class="communityImg"
+          style="background-image: url(/images//community_background.jpg)"
+        ></li>
+        <h2 class="animate__animated animate__fadeInUp">커뮤니티</h2>
+      </div>
+
+      <div class="wrap">
+        <div class="tabWrap">
+          <div class="tab">
+            <ul>
+              <li class="communitytab">
+                <a
+                  class="tablinks introduce"
+                  onclick="opentab(event, 'introduce')"
+                  id="defaultOpen"
+                >
+                  제품소개
+                </a>
+              </li>
+              <li>
+                <a
+                  class="tablinks information"
+                  onclick="opentab(event, 'information')"
+                >
+                  정보공유
+                </a>
+              </li>
+              <li>
+                <a class="tablinks sns" onclick="opentab(event, 'sns')">
+                  공식 SNS
+                </a>
+              </li>
+              <li>
+                <a class="tablinks news" onclick="opentab(event, 'news')">
+                  NEWS
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="introduce" class="tabcontent">
+          <div class="introduceSection01">
+            <div class="introduceText">
+              <h2>제품소개<span>.</span></h2>
+            </div>
+            <div class="introduceSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="introduceList">
+              <div class="introduceListTop">
+                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <select name="sort">
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                </select>
+              </div>
+
+              <div class="introduceListBottom">
+                <div class="listBottomBox">
+                  <img src="/images/Introduction01.jpg" alt="제품소개" />
+                  <a href="#">
+                    <div class="listText">
+                      <h4>
+                        공장 관리 | 제조업을 위한 솔루션 개발 업체 위미르(주)
+                      </h4>
+                      <p>
+                        안녕하세요 :D 제조업의 모든 것, 위미르(주)입니다.
+                        오늘은, 위미르(주)가 어떤 일을 하는지, 어떤 기업인지
+                        조금 더 정 확하게!! 설명 드리려 해요. 많은 업체에서
+                        위미르(주)가 제조업을 위해 어느 정도까지 도와줄 수
+                        있는지 궁금해 하시더 라구요! 그 궁금증!! 지금
+                        풀어드립니다. 다들 따라 오세요 :D 위미르(주)는 제조
+                        기업을 위해 공장 관리에 도움이 되는
+                      </p>
+                      <span>2023-01-13</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="listBottomBox">
+                  <img src="/images/Introduction01.jpg" alt="제품소개" />
+                  <a href="#">
+                    <div class="listText">
+                      <h4>
+                        공장 관리 | 제조업을 위한 솔루션 개발 업체 위미르(주)
+                      </h4>
+                      <p>
+                        안녕하세요 :D 제조업의 모든 것, 위미르(주)입니다.
+                        오늘은, 위미르(주)가 어떤 일을 하는지, 어떤 기업인지
+                        조금 더 정 확하게!! 설명 드리려 해요. 많은 업체에서
+                        위미르(주)가 제조업을 위해 어느 정도까지 도와줄 수
+                        있는지 궁금해 하시더 라구요! 그 궁금증!! 지금
+                        풀어드립니다. 다들 따라 오세요 :D 위미르(주)는 제조
+                        기업을 위해 공장 관리에 도움이 되는
+                      </p>
+                      <span>2023-01-13</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="listNumber">
+                <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                <a href="#"><p>1</p></a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="information" class="tabcontent">
+          <div class="introduceSection01">
+            <div class="introduceText">
+              <h2>정보공유<span>.</span></h2>
+            </div>
+            <div class="introduceSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="introduceList">
+              <div class="introduceListTop">
+                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <select name="sort">
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                </select>
+              </div>
+
+              <div class="introduceListBottom">
+                <div class="listBottomBox">
+                  <img src="/images/Introduction01.jpg" alt="제품소개" />
+                  <a href="#">
+                    <div class="listText">
+                      <h4>
+                        공장 관리 | 제조업을 위한 솔루션 개발 업체 위미르(주)
+                      </h4>
+                      <p>
+                        안녕하세요 :D 제조업의 모든 것, 위미르(주)입니다.
+                        오늘은, 위미르(주)가 어떤 일을 하는지, 어떤 기업인지
+                        조금 더 정 확하게!! 설명 드리려 해요. 많은 업체에서
+                        위미르(주)가 제조업을 위해 어느 정도까지 도와줄 수
+                        있는지 궁금해 하시더 라구요! 그 궁금증!! 지금
+                        풀어드립니다. 다들 따라 오세요 :D 위미르(주)는 제조
+                        기업을 위해 공장 관리에 도움이 되는
+                      </p>
+                      <span>2023-01-13</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="listBottomBox">
+                  <img src="/images/Introduction01.jpg" alt="제품소개" />
+                  <a href="#">
+                    <div class="listText">
+                      <h4>
+                        공장 관리 | 제조업을 위한 솔루션 개발 업체 위미르(주)
+                      </h4>
+                      <p>
+                        안녕하세요 :D 제조업의 모든 것, 위미르(주)입니다.
+                        오늘은, 위미르(주)가 어떤 일을 하는지, 어떤 기업인지
+                        조금 더 정 확하게!! 설명 드리려 해요. 많은 업체에서
+                        위미르(주)가 제조업을 위해 어느 정도까지 도와줄 수
+                        있는지 궁금해 하시더 라구요! 그 궁금증!! 지금
+                        풀어드립니다. 다들 따라 오세요 :D 위미르(주)는 제조
+                        기업을 위해 공장 관리에 도움이 되는
+                      </p>
+                      <span>2023-01-13</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="listNumber">
+                <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                <a href="#"><p>1</p></a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sns" class="tabcontent">
+          <div class="introduceSection01">
+            <div class="introduceText">
+              <h2>공식 SNS<span>.</span></h2>
+            </div>
+            <div class="introduceSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="introduceList">
+              <div class="introduceListTop">
+                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <select name="sort">
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                </select>
+              </div>
+
+              <div class="snsBottom">
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns01.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns02.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns03.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns03.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns01.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns02.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+              </div>
+              <div class="listNumber">
+                <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                <a href="#"><p>1</p></a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="news" class="tabcontent">
+          <div class="introduceSection01">
+            <div class="introduceText">
+              <h2>NEWS<span>.</span></h2>
+            </div>
+            <div class="introduceSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="introduceList">
+              <div class="introduceListTop">
+                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <select name="sort">
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                </select>
+              </div>
+
+              <div class="snsBottom">
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns01.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns02.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns03.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns03.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns01.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+                <div>
+                  <div class="imgHover">
+                    <img src="/images/sns02.jpg" alt="이미지" />
+                  </div>
+                  <a href="#">
+                    <h3>위미르 공식 SNS</h3>
+                    <p>2023-02-02</p>
+                  </a>
+                </div>
+              </div>
+              <div class="listNumber">
+                <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                <a href="#"><p>1</p></a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="/js/common.js"></script>
+  </body>
+</html>

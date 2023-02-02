@@ -14,7 +14,7 @@ function header_on() {
   $(".innerHeader").addClass("on");
   $(".innerHeader .gnb > li > div nav .inner").addClass("on");
 
-  document.getElementById("logoChange").src = "images/logo.png";
+  document.getElementById("logoChange").src = "/images/logo.png";
 
   let textChanges = document.getElementsByClassName("textChange");
   for (let i = 0; i < textChanges.length; i++) {
@@ -29,7 +29,7 @@ function header_off() {
     $(".innerHeader .gnb > li > .inner").removeClass("on");
 
     if (!$("header").hasClass("activated")) {
-      document.getElementById("logoChange").src = "images/logo_white.png";
+      document.getElementById("logoChange").src = "/images/logo_white.png";
       let textChanges = document.getElementsByClassName("textChange");
       for (let i = 0; i < textChanges.length; i++) {
         let textChange = textChanges.item(i);
@@ -84,9 +84,9 @@ $(function () {
         .addEventListener("mousewheel", scrollPage);
     }
 
-    if (navbar > 860) {
+    if (navbar > 480) {
       $header.addClass("activated");
-      document.getElementById("logoChange").src = "images/logo.png";
+      document.getElementById("logoChange").src = "/images/logo.png";
       let textChanges = document.getElementsByClassName("textChange");
       for (let i = 0; i < textChanges.length; i++) {
         let textChange = textChanges.item(i);
@@ -95,7 +95,7 @@ $(function () {
     } else {
       $header.removeClass("activated");
       if (!$(".innerHeader").hasClass("on")) {
-        document.getElementById("logoChange").src = "images/logo_white.png";
+        document.getElementById("logoChange").src = "/images/logo_white.png";
         let textChanges = document.getElementsByClassName("textChange");
         for (let i = 0; i < textChanges.length; i++) {
           let textChange = textChanges.item(i);
@@ -187,21 +187,23 @@ $(function () {
 
 //메인 이미지슬라이드
 $(function () {
-  $(".visual").slick({
-    arrows: true,
-    dots: true,
-    fade: true,
-    autoplay: true,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    autoplaySpeed: 2800,
-    prevArrow: "<i class='prev-arrow fa-solid fa-chevron-left'></i>",
-    nextArrow: "<i class='next-arrow fa-solid fa-chevron-right'></i>",
-    customPaging: function (slider, i) {
-      var tit = $(slider.$slides[i]).find(".dot").html();
-      return '<div class="pager-tit" class= "+ i +">' + tit + "</div>";
-    },
-  });
+  if ($(".visual").length != 0) {
+    $(".visual").slick({
+      arrows: true,
+      dots: true,
+      fade: true,
+      autoplay: true,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      autoplaySpeed: 2800,
+      prevArrow: "<i class='prev-arrow fa-solid fa-chevron-left'></i>",
+      nextArrow: "<i class='next-arrow fa-solid fa-chevron-right'></i>",
+      customPaging: function (slider, i) {
+        var tit = $(slider.$slides[i]).find(".dot").html();
+        return '<div class="pager-tit" class= "+ i +">' + tit + "</div>";
+      },
+    });
+  }
 });
 
 //이미지슬라이드- 넓이 높이 스크립트
@@ -246,21 +248,23 @@ $(function () {
 
 //businessPage 슬라이드
 $(function () {
-  $(".business").slick({
-    arrows: true,
-    dots: true,
-    fade: true,
-    autoplay: true,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    autoplaySpeed: 2800,
-    prevArrow: "<i class='prev-arrow fa-solid fa-chevron-left'></i>",
-    nextArrow: "<i class='next-arrow fa-solid fa-chevron-right'></i>",
-    customPaging: function (slider, i) {
-      var tit = $(slider.$slides[i]).find(".dot").html();
-      return '<div class="pager-tit" class= "+ i +">' + tit + "</div>";
-    },
-  });
+  if ($(".business").length != 0) {
+    $(".business").slick({
+      arrows: true,
+      dots: true,
+      fade: true,
+      autoplay: true,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      autoplaySpeed: 2800,
+      prevArrow: "<i class='prev-arrow fa-solid fa-chevron-left'></i>",
+      nextArrow: "<i class='next-arrow fa-solid fa-chevron-right'></i>",
+      customPaging: function (slider, i) {
+        var tit = $(slider.$slides[i]).find(".dot").html();
+        return '<div class="pager-tit" class= "+ i +">' + tit + "</div>";
+      },
+    });
+  }
 });
 
 $(function () {
@@ -274,69 +278,102 @@ $(function () {
 
 // 카운터
 $(function () {
-  $(".count").counterUp({
-    delay: 10,
-    time: 1000,
-  });
+  if ($(".count").length != 0) {
+    $(".count").counterUp({
+      delay: 10,
+      time: 1000,
+    });
+  }
 });
 
 // 탭 슬라이드
 $(function () {
-  let swiper = new Swiper(".swiper-container2", {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    autoplay: {
-      delay: 1000,
-    },
-    breakpoints: {
-      200: {
-        slidesPerView: 1.5,
-        spaceBetween: 24,
+  if ($(".swiper-container2").length != 0) {
+    let swiper = new Swiper(".swiper-container2", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
       },
-      300: {
-        slidesPerView: 1.5,
-        spaceBetween: 24,
+      autoplay: {
+        delay: 1000,
       },
-      400: {
-        slidesPerView: 1.5,
-        spaceBetween: 24,
+      breakpoints: {
+        200: {
+          slidesPerView: 1.5,
+          spaceBetween: 24,
+        },
+        300: {
+          slidesPerView: 1.5,
+          spaceBetween: 24,
+        },
+        400: {
+          slidesPerView: 1.5,
+          spaceBetween: 24,
+        },
+        500: {
+          slidesPerView: 1.5,
+          spaceBetween: 24,
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
       },
-      500: {
-        slidesPerView: 1.5,
-        spaceBetween: 24,
-      },
-      600: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      960: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
-    },
-  });
+    });
 
-  // 제품 탭 메뉴
-  let movBtn = $(".product_title > ul > li");
-  let movCont = $(".product_chart > div");
+    // 제품 탭 메뉴
+    let movBtn = $(".product_title > ul > li");
+    let movCont = $(".product_chart > div");
 
-  movCont.hide().eq(0).show();
+    movCont.hide().eq(0).show();
 
-  movBtn.click(function (e) {
-    e.preventDefault();
-    var target = $(this);
-    var index = target.index();
-    movBtn.removeClass("active");
-    target.addClass("active");
-    movCont.css("display", "none");
-    movCont.eq(index).css("display", "block");
-  });
+    movBtn.click(function (e) {
+      e.preventDefault();
+      var target = $(this);
+      var index = target.index();
+      movBtn.removeClass("active");
+      target.addClass("active");
+      movCont.css("display", "none");
+      movCont.eq(index).css("display", "block");
+    });
+  }
 });
+
+//FAQ 드롭다운
+function myFunction() {
+  document.getElementById("answer").classList.toggle("show");
+}
+
+window.onclick = function (e) {
+  if (!e.target.matches(".question")) {
+    var answer = document.getElementById("answer");
+    if (answer.classList.contains("show")) {
+      answer.classList.remove("show");
+    }
+  }
+};
+
+var dropdown = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}

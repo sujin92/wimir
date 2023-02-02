@@ -1,0 +1,1201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* companyPage css */
+#business {
+  position: relative;
+  width: 100%;
+  color: #333333;
+}
+
+.businessImg {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 550px;
+  background-position: center;
+  animation: grow 1s linear 1;
+}
+
+@keyframes grow {
+  0% {
+    background-size: 103% 550px;
+  }
+  100% {
+    background-size: 100% 550px;
+  }
+}
+
+.businessTop {
+  position: relative;
+}
+
+.businessTop h2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tabWrap {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  border-bottom: 1px solid #c1c1c1c1;
+}
+
+.tab {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.tab ul {
+  display: flex;
+}
+
+.tab ul li {
+  width: 240px;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.tab ul li a {
+  height: 70px;
+  padding: 0 50px 21px;
+}
+
+.tab ul li .tablinks.active {
+  border-bottom: 3px solid #cd1319;
+}
+
+/* tab 컨텐츠 */
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 실시간 모니터링 */
+.monitoringSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.monitoringText {
+  margin-bottom: 90px;
+}
+
+.monitoringText h2 {
+  padding: 150px 0 80px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.monitoringText h2 span {
+  color: #cd1319;
+  font-size: 48px;
+}
+
+.monitoringText strong {
+  font-size: 23px;
+  color: #c1c1c1c1;
+}
+
+.monitoringText h3 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+  line-height: 63px;
+}
+
+.monitoringText h3 span {
+  color: #cd1319;
+}
+
+.monitoringText p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.monitoringProduct01 span {
+  position: relative;
+}
+
+.monitoringProduct01 .line02::after {
+  content: "";
+  position: absolute;
+  left: -600px;
+  top: 50px;
+  height: 3px;
+  width: 200px;
+  background: #cd1319;
+}
+
+.monitoringProduct01 .line01::after {
+  content: "";
+  position: absolute;
+  left: -600px;
+  top: 51px;
+  height: 1px;
+  width: 750px;
+  background: #c1c1c1c1;
+  z-index: -1;
+}
+
+.monitoringProduct01 .mpTop {
+  display: flex;
+}
+
+.monitoringProduct01 .mpTop div {
+  width: 50%;
+  text-align: left;
+}
+
+.monitoringProduct01 .mpTop h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 110px 0 50px 0;
+}
+
+.monitoringProduct01 .mpTop p {
+  font-size: 21px;
+  line-height: 40px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+}
+
+.monitoringProduct01 .mpBottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0 160px 0;
+}
+
+.monitoringProduct01 .mpBottom P {
+  font-size: 18px;
+  color: #cd1319;
+  margin-top: 30px;
+}
+
+/* 실시간 모니터링 section02 */
+.monitoringSection02 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.monitoringText .textColor {
+  color: #848484;
+}
+
+.monitoringSection02 .monitoringImg {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  left: 0;
+  top: 1930px;
+  z-index: -1;
+  background-image: url(/images/monitoring_simulation.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.monitoringSection02 .monitoringProduct02 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.monitoringSection02 .monitoringProduct02 .mpIcon {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.monitoringProduct02 .mpIcon span {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 5px;
+  color: #757575;
+  font-size: 18px;
+}
+
+.monitoringProduct02 .mpIcon h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.monitoringProduct02 .mpIcon span::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -15px;
+  height: 5px;
+  width: 15px;
+  background: #cd1319;
+}
+
+/* 실시간 모니터링 section03 */
+.monitoringSection03 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.monitoringText strong {
+  color: #c1c1c1c1;
+}
+
+.monitoringFunction > div {
+  display: flex;
+  margin-top: 70px;
+}
+
+.monitoringFunction > div .mpfunction {
+  text-align: left;
+  margin: 20px 0 0 70px;
+  width: 50%;
+}
+
+.monitoringFunction > div .mpfunction strong {
+  font-size: 50px;
+  color: #c1c1c1c1;
+  font-weight: 600;
+}
+
+.monitoringFunction > div .mpfunction strong::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 120px;
+  background: #cd1319;
+  margin: 60px 0 0 -55px;
+}
+
+.monitoringFunction > div .mpfunction h3 {
+  font-size: 30px;
+  margin: 50px 0 35px 0;
+  font-weight: 600;
+}
+
+.monitoringFunction > div .mpfunction p {
+  font-size: 18px;
+  margin: 15px 0;
+  line-height: 25px;
+  padding-left: 15px;
+}
+
+.monitoringFunction > div .mpfunction p::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #cd1319;
+  margin-top: 9px;
+  margin-left: -15px;
+}
+
+/* 실시간 모니터링 section04 */
+.monitoringSection04 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 20px;
+}
+
+.monitoringSection04 .monitoringImg02 {
+  background-color: #dbdbdb;
+  width: 100%;
+  height: 770px;
+  position: absolute;
+  left: 0;
+  top: 4860px;
+  z-index: -1;
+}
+
+.monitoringProduct04 > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.monitoringProduct04 > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.monitoringProduct04 > div > div > div {
+  text-align: left;
+  margin-left: 10px;
+  width: 234px;
+}
+
+.monitoringProduct04 > div > div > div strong {
+  font-size: 22px;
+}
+
+.monitoringProduct04 > div > div > div strong::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 234px;
+  background: #848484;
+  margin-top: 30px;
+  margin-left: -82px;
+}
+
+.monitoringProduct04 > div > div > div .strongRed::after {
+  background: #cd1319;
+}
+
+.monitoringProduct04 > div > div > div h3 {
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+  color: #848484;
+  width: 120px;
+  padding: 5px 0;
+  border: 1px solid #848484;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #efefef;
+}
+
+.monitoringProduct04 > div > div > div .h3Red {
+  color: #cd1319;
+  border: 1px solid #cd1319;
+  background-color: #dbdbdb;
+}
+
+.monitoringProduct04 > div > div > div p {
+  font-size: 16px;
+  color: #6d6d6d;
+  line-height: 25px;
+}
+
+/* 실시간 모니터링 section05 */
+.monitoringSection05 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.monitoringSection05 h3 {
+  font-size: 28px;
+  line-height: 48px;
+  margin-top: 50px;
+}
+
+/* FEMS */
+.femsText {
+  margin-bottom: 90px;
+}
+
+.femsText h3 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+  line-height: 63px;
+  color: #fff;
+}
+
+.femsText p {
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.femsSection02 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.femsText .textColor {
+  color: #848484;
+}
+
+.femsSection02 .femsImg {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  left: 0;
+  top: 1850px;
+  z-index: -1;
+  background-image: url(/images/fems_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.femsProduct02 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.femsProduct02 div {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  position: relative;
+  background-image: url("/icon/femsWhiteBack.png");
+  width: 100%;
+  height: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 70px;
+}
+
+.femsProduct02 div:nth-child(2n) {
+  top: 50px;
+}
+
+.femsProduct02 div h4 {
+  padding: 16px 0;
+}
+
+.femsProduct02 div p {
+  line-height: 36px;
+  padding-top: 20px;
+}
+
+.femsImg02 {
+  background-color: #dbdbdb;
+  width: 100%;
+  height: 770px;
+  position: absolute;
+  left: 0;
+  top: 4790px;
+  z-index: -1;
+}
+
+/* 작업지시 프로그램 */
+.operBottom {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 160px 0;
+}
+
+.operBottom div {
+  margin: 0 100px;
+}
+
+.operBottom P {
+  font-size: 18px;
+  color: #cd1319;
+  margin-top: 30px;
+}
+
+.operSection02 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.operSection02 .operImg {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 1850px;
+  z-index: -1;
+  background-image: url(/images/oper_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.operSection02 p {
+  font-size: 32px;
+  color: #fff;
+  line-height: 75px;
+  padding-top: 30px;
+}
+
+.operSection02 p span {
+  background: linear-gradient(to top, #cd1319 40%, transparent 40%);
+  font-weight: 500;
+}
+
+.operImg02 {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 670px;
+  position: absolute;
+  left: 0;
+  top: 3820px;
+  z-index: -1;
+}
+
+.operProduct {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.operProduct p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 26px;
+}
+
+.consultingTop .Consulting_Back01 {
+  position: absolute;
+  left: 0;
+  z-index: -50;
+}
+
+.consultingTop div .textLeft {
+  color: #fff;
+  text-align: left;
+  padding: 90px 0 20px 0;
+  font-size: 24px;
+}
+
+.consultingTop div .textRight {
+  color: #fff;
+  text-align: right;
+  padding: 25px 0 90px 0;
+  font-size: 24px;
+}
+
+.consultingTop div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin-left: 111px;
+}
+
+.consultingTop div:nth-child(2) > img {
+  margin: 0 30px;
+}
+
+.consultingTop div:nth-child(2) h4 {
+  color: #333333;
+  font-size: 36px;
+  margin-top: 102px;
+}
+
+.consultingTop .Consulting_Back02 {
+  position: absolute;
+  right: 0;
+  z-index: -50;
+  top: 1370px;
+}
+
+.consultingWhy > h3 {
+  margin: 100px 0 30px 0;
+}
+
+.consultingWhy > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.consultingWhy div > div {
+  text-align: center;
+  width: 25%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.consultingWhy div > div > img {
+  margin-bottom: 30px;
+}
+
+.consultingWhy div > div > p {
+  font-size: 20px;
+}
+
+.consultingInner .consultingInnerBack {
+  width: 100%;
+  height: 1400px;
+  position: absolute;
+  left: 0;
+  top: 2150px;
+  z-index: -55;
+  background-image: url(/icon/Consulting_Back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.consultingInner > div > p {
+  font-size: 28px;
+  margin: 100px 0 30px;
+}
+
+.consultingInner > div .checkBox {
+  position: absolute;
+  margin-left: -330px;
+  top: 2370px;
+  z-index: -50;
+}
+
+.consultingInner > div > h2 {
+  padding: 0;
+  font-size: 50px;
+  margin: 0 0 80px 80px;
+}
+
+.consultingBox > img {
+  position: absolute;
+  margin-left: -600px;
+  z-index: -50;
+}
+
+.consultingBox > div {
+  text-align: left;
+  display: flex;
+  margin-left: 70px;
+}
+
+.consultingBox > div > img {
+  padding-top: 9px;
+}
+
+.consultingBox > div span {
+  margin-left: 20px;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 23px;
+}
+
+.consultingBox > p {
+  text-align: left;
+  font-size: 24px !important;
+  margin: 16px 0 60px 80px !important;
+  line-height: 50px;
+}
+
+.consultingInner02 {
+  padding-top: 100px;
+}
+
+.consultingInner02 .conImg {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  left: 0;
+  top: 3550px;
+  z-index: -1;
+  background-image: url(/images/Consulting_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.consultingInner02 h3 {
+  color: #fff;
+}
+
+.consultingInner02 .consultingList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultingList div {
+  color: #fff;
+  text-align: left;
+  width: 265px;
+}
+
+.consultingList div p {
+  margin: -1px 0 20px;
+  background-color: #cd1319;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.consultingList div h4 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.consultingList div span {
+  font-size: 20px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.consultingList div span em {
+  padding-left: 10px;
+}
+
+.consultingList div h4::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  margin-top: 38px;
+  background: #cd1319;
+}
+
+.consultingBottom {
+  padding: 40px 0 70px 0;
+}
+
+.consultingBottom h3 {
+  font-size: 28px;
+  line-height: 48px;
+  margin-top: 50px;
+}
+
+/* 온 오프라인 홍보 */
+.marketingSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 1300px;
+  padding-bottom: 80px;
+}
+
+.marketingFull {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  left: 0;
+  top: 1050px;
+  z-index: 0;
+  background-image: url(/images/Marketing_back01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.marketingFull > div {
+  display: flex;
+}
+
+.marketingFullInner01 {
+  width: 480px;
+  height: 800px;
+  position: relative;
+}
+
+.marketingFullInner01 p {
+  font-size: 26px;
+  padding: 340px 0 20px;
+  color: #cd1319;
+  font-weight: 500;
+}
+
+.marketingFullInner01 h2 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.marketingFull02 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.marketingFullInner02 {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.marketingFullInner02 > div {
+  margin: 310px 0 0 15px;
+}
+
+.marketingFullInner02 span {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.marketingFullInner02 h2 {
+  font-size: 36px;
+  color: #cd1319;
+  font-weight: 500;
+  margin: 15px 0 55px;
+}
+
+.marketingFullInner02 img {
+  position: absolute;
+  top: 363px;
+}
+
+.marketingFullInner02 p {
+  font-size: 21px;
+  color: #6d6d6d;
+  padding: 0;
+  line-height: 36px;
+}
+
+.marketingFullInner01:hover .marketingFullInner02 {
+  opacity: 1;
+}
+
+.marketingFullInner01:hover > p {
+  display: none;
+}
+
+.marketingFullInner01:hover > h2 {
+  display: none;
+}
+
+.marketingSection02 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 1500px;
+}
+
+.websiteImg {
+  position: absolute;
+  left: 0;
+  margin: 50px 0 0 493px;
+}
+
+.website {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.website > div {
+  width: 400px;
+}
+
+.website > div h4 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.website > div p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #6d6d6d;
+}
+
+.website .websiteBox01,
+.websiteBox03 {
+  margin-top: 100px;
+}
+
+.website .websiteBox02 {
+  margin-top: -50px;
+}
+
+.website .websiteBox04,
+.websiteBox06 {
+  margin-top: 200px;
+}
+
+.website .websiteBox05 {
+  margin-top: 420px;
+}
+
+.marketingSection03 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 745px;
+}
+
+.marketingSection03 .marImg {
+  width: 100%;
+  height: 815px;
+  position: absolute;
+  left: 0;
+  top: 3360px;
+  z-index: -55;
+  background-image: url(/images/Media_back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.marketingSection03 .mediaTxt {
+  color: #fff;
+}
+
+.marketingSection03 .mediaTxt strong {
+  font-size: 23px;
+}
+
+.marketingSection03 .mediaTxt h3 {
+  font-size: 36px;
+  padding: 15px 0 50px 0;
+}
+
+.marketingSection03 .mediaTxt p {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 80px;
+}
+
+.marketingList {
+  display: flex;
+  position: absolute;
+  z-index: -50;
+  color: #fff;
+}
+
+.marketingList .mediaBox02,
+.mediaBox04 {
+  margin: 128px 0 0 -68px;
+  color: #333333;
+}
+
+.marketingList .mediaBox03 {
+  margin-left: -68px;
+}
+
+.marketingList .mediaBox05 {
+  margin-left: -69px;
+}
+
+.marketingList h4 {
+  font-size: 26px;
+  margin-top: -180px;
+  padding-bottom: 20px;
+}
+
+.marketingList p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.marketingSection04 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 1350px;
+}
+
+.marketingSection04 .monitoringText {
+  margin-top: 80px;
+}
+
+.marketingSection04 .brochure01 {
+  margin-left: -300px;
+  padding-bottom: 50px;
+}
+
+.marketingSection04 .brochure02 {
+  margin-left: 300px;
+}
+
+.marketingSection05 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 625px;
+}
+
+.marketingSection05 .monitoringText {
+  margin: 80px 0 50px;
+}
+
+.brochureBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brImg {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 690px;
+  position: absolute;
+  left: 0;
+  top: 5620px;
+  z-index: -1;
+}
+
+.brochureBox > div > div {
+  position: absolute;
+  margin: -258px 0 0 67px;
+}
+
+.brochureBox > div > div h4 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+.brochureBox > div > div p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.brochureBox > div:nth-child(3) > div {
+  margin-left: 80px;
+}
+
+.consultingBottom {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}

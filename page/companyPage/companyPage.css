@@ -1,0 +1,615 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* companyPage css */
+#company {
+  position: relative;
+  width: 100%;
+  color: #333333;
+}
+
+.companyImg {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 550px;
+  background-position: center;
+  animation: grow 1s linear 1;
+}
+
+@keyframes grow {
+  0% {
+    background-size: 103% 550px;
+  }
+  100% {
+    background-size: 100% 550px;
+  }
+}
+
+.companyTop {
+  position: relative;
+}
+
+.companyTop h2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tabWrap {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  border-bottom: 1px solid #c1c1c1c1;
+}
+
+.tab {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.tab ul {
+  display: flex;
+}
+
+.tab ul li {
+  width: 300px;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.tab ul li a {
+  height: 70px;
+  padding: 0 80px 21px;
+}
+
+.tab ul li .tablinks.active {
+  border-bottom: 3px solid #cd1319;
+}
+
+/* tab 컨텐츠 */
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 기업소개 */
+.introSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introText {
+  margin-bottom: 90px;
+}
+
+.introText h2 {
+  padding: 150px 0 80px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.introText h2 span {
+  color: #cd1319;
+  font-size: 48px;
+}
+
+.introText strong {
+  font-size: 23px;
+  color: #c1c1c1c1;
+}
+
+.introText h3 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+  line-height: 63px;
+}
+
+.introText h3 span {
+  color: #cd1319;
+}
+
+.introText p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.introText p span {
+  font-weight: 600;
+}
+
+.introSection01 .introIcon .introImg {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background-image: url(/images/recruit_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.introSection01 .introIcon .introBox {
+  display: flex;
+  width: 1200px;
+}
+
+.introSection01 .introIcon .introBox .innerBox {
+  width: 220px;
+  height: 300px;
+  background-color: #fff;
+  margin: 100px 10px;
+}
+
+.introSection01 .introIcon .introBox .innerBox img {
+  margin: 50px 0 30px 0;
+}
+
+.introSection01 .introIcon .introBox .innerBox h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.introSection01 .introIcon .introBox .innerBox p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* 기업소개 section02 */
+.introSection02 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.introSection02 div h3 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+  line-height: 63px;
+}
+
+.introSection02 div p {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+
+.introSection02 .solution {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introSection02 .solution .solutionIcon {
+  width: 260px;
+  display: block;
+}
+
+.introSection02 .solution .solutionIcon:nth-of-type(2) {
+  margin-top: 80px;
+}
+
+.introSection02 .solution .solutionIcon img {
+  margin-bottom: 20px;
+}
+
+.introSection02 .solution .solutionIcon strong {
+  font-size: 16px;
+  color: #cd1319;
+}
+
+.introSection02 .solution .solutionIcon h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 28px;
+}
+
+/* 기업소개 section03*/
+.introSection03 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introSection03 .topText {
+  margin-top: 190px;
+}
+
+.introSection03 div strong {
+  font-size: 23px;
+  color: #fff;
+}
+
+.introSection03 div h3 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+  line-height: 63px;
+  color: #fff;
+}
+
+.introSection03 .introImg2 {
+  width: 100%;
+  height: 830px;
+  position: absolute;
+  top: 2650px;
+  left: 0;
+  z-index: -1;
+  background-image: url(/images/intro_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.introSection03 .expectation {
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+  justify-content: space-between;
+  padding-bottom: 55px;
+}
+
+.introSection03 .expectation h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* 기업소개 section04*/
+.introSection04 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introSection04 .topText {
+  margin-top: 90px;
+}
+
+.introSection04 div strong {
+  font-size: 23px;
+  color: #c1c1c1c1;
+}
+
+.introSection04 div h3 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 77px 0;
+  line-height: 63px;
+}
+
+.introSection04 .introImg3 {
+  width: 100%;
+  height: 710px;
+  position: absolute;
+  top: 3480px;
+  left: 0;
+  z-index: -1;
+  background-image: url(/images/partner_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.introSection04 .partner {
+  justify-content: space-between;
+}
+
+.introSection04 .partner .partnerIcon {
+  width: 1200px;
+  height: 60px;
+  margin-bottom: 90px;
+}
+
+/* 연혁 */
+.historySection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introText h4 {
+  font-size: 30px;
+  line-height: 56px;
+  color: #4c4c4c;
+  margin-top: 40px;
+}
+.lineBack {
+  position: absolute;
+  top: 780px;
+  left: 0;
+  width: 100%;
+  z-index: -50;
+}
+
+.historyinner {
+  text-align: left;
+  margin-left: 558px;
+  padding-bottom: 200px;
+}
+
+.historyinner img {
+  position: absolute;
+  z-index: -50;
+  left: 0;
+}
+
+.historyinner img:nth-child(1) {
+  top: 1300px;
+}
+
+.historyinner img:nth-child(2) {
+  top: 2155px;
+  margin-left: 360px;
+}
+
+.historyinner img:nth-child(3) {
+  top: 3035px;
+  margin-left: 360px;
+}
+
+.historyinner img:nth-child(4) {
+  top: 3600px;
+  margin-left: 360px;
+}
+
+.historyinner img:nth-child(5) {
+  top: 3900px;
+  margin-left: 360px;
+}
+
+.historyinner h3 {
+  font-size: 36px;
+  color: #cd1319;
+  font-weight: 600;
+  margin: 40px 0;
+}
+
+.historyinner em {
+  font-size: 24px;
+  padding-left: 30px;
+}
+
+.historyinner .month {
+  font-weight: 500;
+}
+
+.historyinner .monthEvent span {
+  width: 460px;
+  position: relative;
+  display: flex;
+  line-height: 35px;
+  margin-left: 80px;
+  top: -30px;
+  padding-bottom: 10px;
+}
+
+/* 조직도 */
+.groupSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.groupSection01 h3 {
+  padding: 0;
+}
+
+.groupSection01 div:nth-child(1) {
+  display: block;
+}
+
+.groupSection01 img {
+  border: 1px solid #cd1319;
+  padding: 11px 92px;
+}
+
+.groupSection01 h4 {
+  border: 1px solid #cd1319;
+  background-color: #cd1319;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  width: 280px;
+  margin: 0 auto;
+}
+
+/* 찾아오시는 길 */
+.mapSection01 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mapSection01 h3 {
+  padding: 0;
+}
+
+.mapSection01 div:nth-of-type(2) {
+  width: 800px;
+  display: block;
+  text-align: left;
+}
+
+.mapSection01 div:nth-of-type(2) {
+  margin-top: 50px;
+  margin: 50px auto 100px;
+}
+
+.mapSection01 div:nth-of-type(2) h3 {
+  font-size: 24px;
+  line-height: 38px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.mapSection01 div:nth-of-type(2) h3 span {
+  color: #cd1319;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.mapSection01 div:nth-of-type(2) h3:nth-child(2) em {
+  margin-left: 15px;
+}
+
+.mapSection01 div:nth-of-type(2) h3:nth-child(3) em {
+  margin-left: 90px;
+}

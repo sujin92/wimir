@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/page/main/index.css" />
+    <link rel="stylesheet" href="/page/centerPage/centerPage.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/favicon/apple-icon-180x180.png"
+    />
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!--animate style-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/cad96521f3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/subMenu.js"></script>
+    <script src="/js/tab.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <title>WIMIR</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+    <!-- 퀵메뉴 -->
+    <div class="quickmenu" id="quickmenu"></div>
+
+    <section id="center">
+      <div class="centerTop">
+        <li
+          class="centerImg"
+          style="background-image: url(/images/Service_background.jpg)"
+        ></li>
+        <h2 class="animate__animated animate__fadeInUp">고객지원</h2>
+      </div>
+
+      <div class="wrap">
+        <div class="tabWrap">
+          <div class="tab">
+            <ul>
+              <li class="centertab">
+                <a
+                  class="tablinks"
+                  onclick="opentab(event, 'notice')"
+                  id="defaultOpen"
+                >
+                  공지사항
+                </a>
+              </li>
+              <li>
+                <a class="tablinks" onclick="opentab(event, 'inquiry')">
+                  문의하기
+                </a>
+              </li>
+              <li>
+                <a class="tablinks" onclick="opentab(event, 'faq')"> FAQ </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="notice" class="tabcontent">
+          <div class="noticeSection01">
+            <div class="noticeText">
+              <h2>공지사항<span>.</span></h2>
+            </div>
+            <div class="noticeSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="noticeList">
+              <div class="noticeListTop">
+                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <select name="sort">
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                </select>
+              </div>
+
+              <div class="noticeListBottom">
+                <ul class="noticeTitle">
+                  <li><a href="#">NO</a></li>
+                  <li><a href="#">카테고리</a></li>
+                  <li><a href="#">제목</a></li>
+                  <li><a href="#">날짜</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">주요공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">주요공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">전체공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                </ul>
+              </div>
+
+              <div class="listNumber">
+                <i class="fa-solid fa-angles-left"></i>
+                <i class="fa-solid fa-angle-left"></i>
+                <a href="#"><p>1</p></a>
+                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angles-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="inquiry" class="tabcontent">
+          <div class="noticeSection01">
+            <div class="noticeText">
+              <h2>문의하기<span>.</span></h2>
+            </div>
+            <div class="noticeSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="noticeList">
+              <div class="noticeListTop">
+                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <select name="sort">
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                </select>
+              </div>
+
+              <div class="noticeListBottom">
+                <ul class="noticeTitle">
+                  <li><a href="#">NO</a></li>
+                  <li><a href="#">항목</a></li>
+                  <li><a href="#">제목</a></li>
+                  <li><a href="#">작성자</a></li>
+                  <li><a href="#">날짜</a></li>
+                </ul>
+
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">설비모니터링</a></li>
+                  <li>
+                    <a href="#"
+                      >설비모니터링 문의합니다.<i class="fa-solid fa-lock"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">작업지시 프로그램</a></li>
+                  <li>
+                    <a href="#"
+                      >작업지시 프로그램 문의합니다.<i
+                        class="fa-solid fa-lock"
+                      ></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">컨설팅</a></li>
+                  <li>
+                    <a href="#"
+                      >컨설팅 문의합니다.<i class="fa-solid fa-lock"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">컨설팅</a></li>
+                  <li>
+                    <a href="#"
+                      >컨설팅 문의합니다.<i class="fa-solid fa-lock"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">컨설팅</a></li>
+                  <li>
+                    <a href="#"
+                      >컨설팅 문의합니다.<i class="fa-solid fa-lock"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">컨설팅</a></li>
+                  <li>
+                    <a href="#"
+                      >컨설팅 문의합니다.<i class="fa-solid fa-lock"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">설비모니터링</a></li>
+                  <li>
+                    <a href="#"
+                      >설비모니터링 문의합니다.<i class="fa-solid fa-lock"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">작업지시 프로그램</a></li>
+                  <li>
+                    <a href="#"
+                      >작업지시 프로그램 문의합니다.<i
+                        class="fa-solid fa-lock"
+                      ></i
+                    ></a>
+                  </li>
+                  <li><a href="#">신**</a></li>
+                  <li><a href="#">2023-02-02</a></li>
+                </ul>
+              </div>
+              <a href="#" class="inquiry">문의하기</a>
+              <div class="listNumber">
+                <i class="fa-solid fa-angles-left"></i>
+                <i class="fa-solid fa-angle-left"></i>
+                <a href="#"><p>1</p></a>
+                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angles-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="faq" class="tabcontent">
+          <div class="noticeSection01">
+            <div class="noticeText">
+              <h2>FAQ<span>.</span></h2>
+            </div>
+            <div class="noticeSearch">
+              <form id="form">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="검색어를 입력해주세요"
+                  class="search"
+                />
+              </form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+              <div class="faqList">
+                <div>
+                  <h3 onclick="myFunction()" class="question">
+                    <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.<i
+                      class="fa-solid fa-angle-down"
+                    ></i>
+                  </h3>
+                  <p id="answer" class="dropdown-content">
+                    <i class="fa-solid fa-a"></i>
+                    제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                    한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서
+                    요즘 많은 제조업에서 소모되는 전력량 체크를 위해​ 에너지
+                    모니터링을 할 수 있는 FEMS 구축에 관심을 가지고 있어요.
+                    관심이 높아지는 만큼 부산 에너지 모니터링, FEMS 구축 전문
+                    위미르(주)에게 많이 문의를 주신답니다!
+                  </p>
+                </div>
+                <div>
+                  <h3 onclick="myFunction()" class="question">
+                    <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.<i
+                      class="fa-solid fa-angle-down"
+                    ></i>
+                  </h3>
+                  <p id="answer" class="dropdown-content">
+                    <i class="fa-solid fa-a"></i>
+                    aaa
+                  </p>
+                </div>
+              </div>
+
+              <div class="listNumber">
+                <i class="fa-solid fa-angles-left"></i>
+                <i class="fa-solid fa-angle-left"></i>
+                <a href="#"><p>1</p></a>
+                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angles-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="/js/common.js"></script>
+  </body>
+</html>

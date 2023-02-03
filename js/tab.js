@@ -24,6 +24,9 @@ window.onload = function () {
 };
 
 function firstTab() {
-  const id = window.location.search.split("?id=")[1];
+  let id = location.href.split("?id=")[1];
+  if (id.indexOf("&top") != -1) {
+    id = id.split("&")[0];
+  }
   document.getElementById(id).style.display = "block";
 }

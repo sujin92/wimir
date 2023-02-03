@@ -10,7 +10,7 @@ var headerCont = `
 
   <ul class="gnb">
     <li>
-      <a href="/page/companyPage/companyPage.html?id=intro" class="textChange">회사소개</a>
+      <a href="/page/companyPage/companyPage.html?id=intro&top=y" class="textChange">회사소개</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
@@ -24,7 +24,7 @@ var headerCont = `
     </li>
 
     <li>
-      <a href="/page/businessPage/businessPage.html?id=monitoring" class="textChange">사업분야</a>
+      <a href="/page/businessPage/businessPage.html?id=monitoring&top=y" class="textChange">사업분야</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
@@ -39,7 +39,7 @@ var headerCont = `
     </li>
 
     <li>
-      <a href="/page/technologyPage/technologyPage.html?id=result" class="textChange">기술현황</a>
+      <a href="/page/technologyPage/technologyPage.html?id=result&top=y" class="textChange">기술현황</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
@@ -52,7 +52,7 @@ var headerCont = `
     </li>
 
     <li>
-      <a href="/page/communityPage/communityPage.html?id=introduce" class="textChange">커뮤니티</a>
+      <a href="/page/communityPage/communityPage.html?id=introduce&top=y" class="textChange">커뮤니티</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
@@ -66,7 +66,7 @@ var headerCont = `
     </li>
 
     <li>
-      <a href="/page/staffPage/staffPage.html?id=type" class="textChange">인재채용</a>
+      <a href="/page/staffPage/staffPage.html?id=type&top=y" class="textChange">인재채용</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
@@ -79,7 +79,7 @@ var headerCont = `
     </li>
 
     <li>
-      <a href="/page/centerPage/centerPage.html?id=notice" class="textChange">고객지원</a>
+      <a href="/page/centerPage/centerPage.html?id=notice&top=y" class="textChange">고객지원</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
@@ -98,7 +98,7 @@ var headerCont = `
     <div class="menu" onclick="sideMenu();"></div>
   </div>
   <div class="side_menu">
-    <a href="/page/main/index.html"><img src="/images/logo.png" alt="logo" width="96px" /></a>
+  <a href="/page/main/index.html"><img src="/images/logo.png" alt="logo" width="96px" /></a>
     <img src="/images/wimir_background.png" alt="위미르" />
     <ul class="side_gnb">
       <li>
@@ -233,7 +233,7 @@ var footerCont = `
           <li><a href="/page/companyPage/companyPage.html?id=intro">기업소개</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=history">연혁</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=group">조직도</a></li>
-          <li><a href="/page/companyPage/companyPage.html?id=map">찾아오시는 길</a></li>
+          <li><a href="#">찾아오시는 길</a></li>
         </ul>
       </li>
       <li>
@@ -272,11 +272,11 @@ var footerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/centerPage/centerPage.html?id=notice">고객지원</a>
+        <a href="#">고객지원</a>
         <ul>
-          <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
-          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
-          <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
       </li>
     </ul>

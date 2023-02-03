@@ -1,9 +1,41 @@
 // 네비 바 (scroll)
 let isOpen = false;
+var isTop = false;
 
 $(document).ready(function () {
   SetEvent();
+  SetUI();
+  window.onkeydown = function () {
+    var kcode = event.keyCode;
+    let id = "";
+    if (kcode == 116) {
+      id = location.href.split("?id=")[1];
+      if (!isTop) {
+        if (id.indexOf("&") != -1) {
+          id = id.split("&")[0];
+        }
+      }
+
+      history.replaceState({}, null, location.pathname + "?id=" + id);
+    }
+  };
 });
+
+function SetUI() {
+  if (location.href.indexOf("&top=y") != -1) {
+    isTop = true;
+    $(".innerHeader").addClass("on");
+    $(".innerHeader .gnb > li > div nav .inner").addClass("on");
+
+    document.getElementById("logoChange").src = "/images/logo.png";
+
+    let textChanges = document.getElementsByClassName("textChange");
+    for (let i = 0; i < textChanges.length; i++) {
+      let textChange = textChanges.item(i);
+      textChange.style.color = "#333333";
+    }
+  }
+}
 
 function SetEvent() {
   $(".innerHeader").mouseover(header_on);
@@ -11,6 +43,7 @@ function SetEvent() {
 }
 
 function header_on() {
+  isTop = true;
   $(".innerHeader").addClass("on");
   $(".innerHeader .gnb > li > div nav .inner").addClass("on");
 
@@ -24,6 +57,7 @@ function header_on() {
 }
 
 function header_off() {
+  isTop = false;
   if (!$(".side_menu").hasClass("active")) {
     $(".innerHeader ").removeClass("on");
     $(".innerHeader .gnb > li > .inner").removeClass("on");

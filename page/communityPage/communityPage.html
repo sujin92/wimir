@@ -114,7 +114,7 @@
 
             <div class="introduceList">
               <div class="introduceListTop">
-                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <p>총 <span id="boardCount">9</span>건의 게시물이 있습니다.</p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -122,7 +122,7 @@
                 </select>
               </div>
 
-              <div class="introduceListBottom">
+              <div id="introduceListBottom" class="introduceListBottom">
                 <div class="listBottomBox">
                   <img src="/images/Introduction01.jpg" alt="제품소개" />
                   <a href="#">
@@ -223,6 +223,7 @@
                     </div>
                   </a>
                 </div>
+
                 <div class="listBottomBox">
                   <img src="/images/Introduction01.jpg" alt="제품소개" />
                   <a href="#">
@@ -450,4 +451,6 @@
 
     <script src="/js/common.js"></script>
   </body>
+
+  <script src="./test.js"></script>
 </html>

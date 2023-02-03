@@ -152,6 +152,7 @@ header.activated {
   height: 80px;
   border-bottom: 1px solid rgba(141, 141, 141, 0.2);
   text-align: center;
+  z-index: 9999;
 }
 
 .innerHeader.on {
@@ -296,7 +297,7 @@ header.activated {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 450px;
+  height: 400px;
   position: absolute;
   top: 80px;
   display: none;
@@ -1390,8 +1391,10 @@ footer .footerView .footerRight ul > li > ul > li > a {
     font-size: 16px;
   }
   .innerHeader .side_menu {
-    top: 5px;
+    top: 80px;
     background-size: 1290px 350px;
+    height: 350px;
+    background-color: #333333;
   }
   .innerHeader .gnb {
     padding-right: 9%;
@@ -2056,14 +2059,15 @@ footer .footerView .footerRight ul > li > ul > li > a {
     background-color: white;
     height: 960px;
     top: 0;
+    z-index: 1;
   }
-  .innerHeader .side_menu > img:nth-of-type(1) {
+  .innerHeader .side_menu > a img:nth-of-type(1) {
     display: block;
     position: absolute;
     top: 15px;
     left: 35px;
   }
-  .innerHeader .side_menu > img:nth-of-type(2) {
+  .innerHeader .side_menu > img {
     display: block;
     position: absolute;
     transform: rotate(-90deg);

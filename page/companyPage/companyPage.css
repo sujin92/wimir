@@ -548,29 +548,6 @@ table {
   padding-bottom: 150px;
 }
 
-.groupSection01 h3 {
-  padding: 0;
-}
-
-.groupSection01 div:nth-child(1) {
-  display: block;
-}
-
-.groupSection01 img {
-  border: 1px solid #cd1319;
-  padding: 11px 92px;
-}
-
-.groupSection01 h4 {
-  border: 1px solid #cd1319;
-  background-color: #cd1319;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 500;
-  width: 280px;
-  margin: 0 auto;
-}
-
 /* 찾아오시는 길 */
 .mapSection01 {
   width: 1200px;

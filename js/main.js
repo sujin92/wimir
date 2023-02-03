@@ -348,32 +348,3 @@ $(function () {
     });
   }
 });
-
-//FAQ 드롭다운
-function myFunction() {
-  document.getElementById("answer").classList.toggle("show");
-}
-
-window.onclick = function (e) {
-  if (!e.target.matches(".question")) {
-    var answer = document.getElementById("answer");
-    if (answer.classList.contains("show")) {
-      answer.classList.remove("show");
-    }
-  }
-};
-
-var dropdown = document.getElementsByClassName("question");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}

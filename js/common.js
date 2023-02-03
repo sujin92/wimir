@@ -79,13 +79,13 @@ var headerCont = `
     </li>
 
     <li>
-      <a href="/page/centerPage/centerPage.html" class="textChange">고객지원</a>
+      <a href="/page/centerPage/centerPage.html?id=notice" class="textChange">고객지원</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
-            <li><a href="/page/centerPage/centerPage.html">공지사항</a></li>
-            <li><a href="#">문의하기</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
+            <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
+            <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
           </ul>
         </nav>
       </div>
@@ -98,11 +98,11 @@ var headerCont = `
     <div class="menu" onclick="sideMenu();"></div>
   </div>
   <div class="side_menu">
-    <img src="/images/logo.png" alt="logo" width="96px" />
+    <a href="/page/main/index.html"><img src="/images/logo.png" alt="logo" width="96px" /></a>
     <img src="/images/wimir_background.png" alt="위미르" />
     <ul class="side_gnb">
       <li>
-        <a href="/page/companyPage/companyPage.html?id=intro">회사소개</a>
+        <a href="#">회사소개</a>
         <ul class="side_inner">
           <li><a href="/page/companyPage/companyPage.html?id=intro">기업소개</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=history">연혁</a></li>
@@ -111,7 +111,7 @@ var headerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/businessPage/businessPage.html?id=monitoring">사업분야</a>
+        <a href="#">사업분야</a>
         <ul class="side_inner">
           <li><a href="/page/businessPage/businessPage.html?id=monitoring">실시간 모니터링</a></li>
           <li><a href="/page/businessPage/businessPage.html?id=fems">FEMS</a></li>
@@ -121,7 +121,7 @@ var headerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/technologyPage/technologyPage.html?id=result">기술현황</a>
+        <a href="#">기술현황</a>
         <ul class="side_inner">
           <li><a href="/page/technologyPage/technologyPage.html?id=result">수행실적</a></li>
           <li><a href="/page/technologyPage/technologyPage.html?id=confirm">인증현황</a></li>
@@ -129,7 +129,7 @@ var headerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/communityPage/communityPage.html?id=introduce">커뮤니티</a>
+        <a href="#">커뮤니티</a>
         <ul class="side_inner">
           <li><a href="/page/communityPage/communityPage.html?id=introduce">제품소개</a></li>
           <li><a href="/page/communityPage/communityPage.html?id=information">정보공유</a></li>
@@ -138,7 +138,7 @@ var headerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/staffPage/staffPage.html?id=type">인재채용</a>
+        <a href="#">인재채용</a>
         <ul class="side_inner">
           <li><a href="/page/staffPage/staffPage.html?id=type">인재상</a></li>
           <li><a href="/page/staffPage/staffPage.html?id=recruitment">채용안내</a></li>
@@ -146,11 +146,11 @@ var headerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/centerPage/centerPage.html">고객지원</a>
+        <a href="#">고객지원</a>
         <ul class="side_inner">
-          <li><a href="/page/centerPage/centerPage.html">공지사항</a></li>
-          <li><a href="#">문의하기</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
         </ul>
       </li>
     </ul>
@@ -233,7 +233,7 @@ var footerCont = `
           <li><a href="/page/companyPage/companyPage.html?id=intro">기업소개</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=history">연혁</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=group">조직도</a></li>
-          <li><a href="#">찾아오시는 길</a></li>
+          <li><a href="/page/companyPage/companyPage.html?id=map">찾아오시는 길</a></li>
         </ul>
       </li>
       <li>
@@ -272,11 +272,11 @@ var footerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">고객지원</a>
+        <a href="/page/centerPage/centerPage.html?id=notice">고객지원</a>
         <ul>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">문의하기</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
         </ul>
       </li>
     </ul>

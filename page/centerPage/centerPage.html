@@ -39,6 +39,7 @@
 
     <script src="/js/jquery-1.10.2.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/dropdown.js"></script>
     <script src="/js/subMenu.js"></script>
     <script src="/js/tab.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -209,8 +210,8 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
-            <div class="noticeList">
-              <div class="noticeListTop">
+            <div class="noticeList inquiryList">
+              <div class="noticeListTop inquiryListTop">
                 <p>총 <span>9</span>건의 게시물이 있습니다.</p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
@@ -219,8 +220,8 @@
                 </select>
               </div>
 
-              <div class="noticeListBottom">
-                <ul class="noticeTitle">
+              <div class="noticeListBottom inquiryBottom">
+                <ul class="noticeTitle inquiryTitle">
                   <li><a href="#">NO</a></li>
                   <li><a href="#">항목</a></li>
                   <li><a href="#">제목</a></li>
@@ -228,7 +229,7 @@
                   <li><a href="#">날짜</a></li>
                 </ul>
 
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">설비모니터링</a></li>
                   <li>
@@ -239,7 +240,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">작업지시 프로그램</a></li>
                   <li>
@@ -252,7 +253,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">컨설팅</a></li>
                   <li>
@@ -263,7 +264,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">컨설팅</a></li>
                   <li>
@@ -274,7 +275,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">컨설팅</a></li>
                   <li>
@@ -285,7 +286,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">컨설팅</a></li>
                   <li>
@@ -296,7 +297,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">설비모니터링</a></li>
                   <li>
@@ -307,7 +308,7 @@
                   <li><a href="#">신**</a></li>
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
-                <ul class="noticeList">
+                <ul class="noticeList inquiryList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">작업지시 프로그램</a></li>
                   <li>
@@ -350,44 +351,139 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
-            <div>
-              <div class="faqList">
-                <div>
-                  <h3 onclick="myFunction()" class="question">
-                    <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.<i
-                      class="fa-solid fa-angle-down"
-                    ></i>
-                  </h3>
-                  <p id="answer" class="dropdown-content">
-                    <i class="fa-solid fa-a"></i>
-                    제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
-                    한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서
-                    요즘 많은 제조업에서 소모되는 전력량 체크를 위해​ 에너지
-                    모니터링을 할 수 있는 FEMS 구축에 관심을 가지고 있어요.
-                    관심이 높아지는 만큼 부산 에너지 모니터링, FEMS 구축 전문
-                    위미르(주)에게 많이 문의를 주신답니다!
-                  </p>
-                </div>
-                <div>
-                  <h3 onclick="myFunction()" class="question">
-                    <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.<i
-                      class="fa-solid fa-angle-down"
-                    ></i>
-                  </h3>
-                  <p id="answer" class="dropdown-content">
-                    <i class="fa-solid fa-a"></i>
-                    aaa
-                  </p>
-                </div>
+            <div class="faqList">
+              <button
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+              >
+                <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.
+              </button>
+              <div class="content">
+                <i class="fa-solid fa-a"></i>
+                <p>
+                  제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                  한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘
+                  많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할
+                  수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는
+                  만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이
+                  문의를 주신답니다!
+                </p>
               </div>
 
-              <div class="listNumber">
-                <i class="fa-solid fa-angles-left"></i>
-                <i class="fa-solid fa-angle-left"></i>
-                <a href="#"><p>1</p></a>
-                <i class="fa-solid fa-angle-right"></i>
-                <i class="fa-solid fa-angles-right"></i>
+              <button
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+              >
+                <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.
+              </button>
+              <div class="content">
+                <i class="fa-solid fa-a"></i>
+                <p>
+                  제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                  한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘
+                  많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할
+                  수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는
+                  만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이
+                  문의를 주신답니다!
+                </p>
               </div>
+
+              <button
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+              >
+                <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.
+              </button>
+              <div class="content">
+                <i class="fa-solid fa-a"></i>
+                <p>
+                  제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                  한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘
+                  많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할
+                  수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는
+                  만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이
+                  문의를 주신답니다!
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+              >
+                <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.
+              </button>
+              <div class="content">
+                <i class="fa-solid fa-a"></i>
+                <p>
+                  제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                  한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘
+                  많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할
+                  수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는
+                  만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이
+                  문의를 주신답니다!
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+              >
+                <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.
+              </button>
+              <div class="content">
+                <i class="fa-solid fa-a"></i>
+                <p>
+                  제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                  한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘
+                  많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할
+                  수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는
+                  만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이
+                  문의를 주신답니다!
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+              >
+                <i class="fa-solid fa-q"></i>자주 묻는 질문입니다.
+              </button>
+              <div class="content">
+                <i class="fa-solid fa-a"></i>
+                <p>
+                  제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가
+                  한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘
+                  많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할
+                  수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는
+                  만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이
+                  문의를 주신답니다!
+                </p>
+              </div>
+            </div>
+            <div class="listNumber">
+              <i class="fa-solid fa-angles-left"></i>
+              <i class="fa-solid fa-angle-left"></i>
+              <a href="#"><p>1</p></a>
+              <i class="fa-solid fa-angle-right"></i>
+              <i class="fa-solid fa-angles-right"></i>
             </div>
           </div>
         </div>

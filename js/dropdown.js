@@ -1,3 +1,4 @@
+// qna
 function collapse(element) {
   var before = document.getElementsByClassName("dropActive")[0];
   if (before && document.getElementsByClassName("dropActive")[0] != element) {
@@ -13,3 +14,10 @@ function collapse(element) {
     content.style.maxHeight = content.scrollHeight + "px";
   }
 }
+
+// 댓글
+const heading = document.getElementById('replyHeading');
+const btnnn = document.getElementById('reply');
+btnnn.addEventListener('click', (e) => {
+  heading.classList.toggle('replyHidden');
+});

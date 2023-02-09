@@ -1,5 +1,5 @@
-var headerSpace = document.querySelector("#header");
-var headerCont = `
+let headerSpace = document.querySelector("#header");
+let headerCont = `
 <header>
 <div class="innerHeader">
   <h1 class="logo">
@@ -107,7 +107,7 @@ var headerCont = `
           <li><a href="/page/companyPage/companyPage.html?id=intro">기업소개</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=history">연혁</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=group">조직도</a></li>
-          <li><a href="#">찾아오시는 길</a></li>
+          <li><a href="/page/companyPage/companyPage.html?id=map">찾아오시는 길</a></li>
         </ul>
       </li>
       <li>
@@ -174,8 +174,8 @@ var headerCont = `
 `;
 headerSpace.innerHTML = headerCont;
 
-var quickmenuSpace = document.querySelector("#quickmenu");
-var quickmenuCont = `
+let quickmenuSpace = document.querySelector("#quickmenu");
+let quickmenuCont = `
 <ul>
         <li class="topnone">
           <a href="#">sns<br />바로가기</a>
@@ -210,8 +210,8 @@ var quickmenuCont = `
 `;
 quickmenuSpace.innerHTML = quickmenuCont;
 
-var footerSpace = document.querySelector("#footer");
-var footerCont = `
+let footerSpace = document.querySelector("#footer");
+let footerCont = `
 <footer>
 <div class="footerView">
   <div class="footerLeft">
@@ -228,16 +228,16 @@ var footerCont = `
   <div class="footerRight">
     <ul>
       <li>
-        <a href="/page/companyPage/companyPage.html?id=intro">회사소개</a>
+        <a href="/page/companyPage/companyPage.html?id=intro&top=y">회사소개</a>
         <ul>
           <li><a href="/page/companyPage/companyPage.html?id=intro">기업소개</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=history">연혁</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=group">조직도</a></li>
-          <li><a href="#">찾아오시는 길</a></li>
+          <li><a href="/page/companyPage/companyPage.html?id=map">찾아오시는 길</a></li>
         </ul>
       </li>
       <li>
-        <a href="/page/businessPage/businessPage.html?id=monitoring">사업분야</a>
+        <a href="/page/businessPage/businessPage.html?id=monitoring&top=y">사업분야</a>
         <ul>
           <li><a href="/page/businessPage/businessPage.html?id=monitoring">실시간 모니터링</a></li>
           <li><a href="/page/businessPage/businessPage.html?id=fems">FEMS</a></li>
@@ -247,7 +247,7 @@ var footerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/technologyPage/technologyPage.html?id=result">기술현황</a>
+        <a href="/page/technologyPage/technologyPage.html?id=result&top=y">기술현황</a>
         <ul>
           <li><a href="/page/technologyPage/technologyPage.html?id=result">수행실적</a></li>
           <li><a href="/page/technologyPage/technologyPage.html?id=confirm">인증현황</a></li>
@@ -255,7 +255,7 @@ var footerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/communityPage/communityPage.html?id=introduce">커뮤니티</a>
+        <a href="/page/communityPage/communityPage.html?id=introduce&top=y">커뮤니티</a>
         <ul>
           <li><a href="/page/communityPage/communityPage.html?id=introduce">제품소개</a></li>
           <li><a href="/page/communityPage/communityPage.html?id=information">정보공유</a></li>
@@ -264,7 +264,7 @@ var footerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/staffPage/staffPage.html?id=type">인재채용</a>
+        <a href="/page/staffPage/staffPage.html?id=type&top=y">인재채용</a>
         <ul>
           <li><a href="/page/staffPage/staffPage.html?id=type">인재상</a></li>
           <li><a href="/page/staffPage/staffPage.html?id=recruitment">채용안내</a></li>
@@ -272,11 +272,11 @@ var footerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">고객지원</a>
+        <a href="/page/centerPage/centerPage.html?id=notice&top=y">고객지원</a>
         <ul>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">문의하기</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
+          <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
         </ul>
       </li>
     </ul>

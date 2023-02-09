@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box
+}
+
+#loadPage {
+  width: 1200px;
+  margin: 150px auto;
+  text-align: left;
+  height: 500px;
+  color: #333333;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container h2 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.container > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  outline: none;
+  padding-left: 10px;
+  background-color: none;
+  border-bottom: none;
+  color: #333333;
+}
+
+.container > div > div {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #c1c1c1;
+  border-bottom: none;
+}
+
+.container > div > div button {
+  height: 30px;
+  line-height: 30px;
+  margin: 7px 10px 0 0;
+  padding: 0 15px;
+  border-radius: 15px;
+  border: 1px solid #c1c1c1;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.container > div > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.container > div > div:nth-of-type(2) > button {
+  margin-top: 0;
+}
+
+.container > div > div:nth-of-type(2) > button:hover {
+  background-color: #cd1319;
+  border: 1px solid #cd1319;
+  color: #fff;
+}
+
+.container .introImg {
+  width: 10%;
+  border: 1px solid #c1c1c1;
+  border-left: none;
+}
+
+.container > div > div button:nth-of-type(1) {
+  margin-left: 10px;
+}
+
+.registerbtn {
+  background-color: #cd1319;
+  color: white;
+  padding: 12px 0;
+  margin: 200px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}

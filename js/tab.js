@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 function opentab(evt, menuName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
 
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -25,6 +25,7 @@ window.onload = function () {
 
 function firstTab() {
   let id = location.href.split("?id=")[1];
+  id = id.split("&")[0]
   if (id.indexOf("&top") != -1) {
     id = id.split("&")[0];
   }

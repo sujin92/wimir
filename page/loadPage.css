@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  border: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#loadPage {
+  width: 1200px;
+  margin: 150px auto;
+  text-align: center;
+  height: 1000px;
+  color: #333333;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#loadPage h2 {
+  font-size: 23px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #cd1319;
+}
+
+#loadPage div .loadPageTop {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+#loadPage > div > div h3 span {
+  margin-left: 15px;
+  color: #696969;
+}
+
+.revise {
+  text-align: right;
+}
+
+.revise button {
+  padding: 8px 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  margin: 50px 0 50px 20px;
+}
+
+.comment > div:nth-of-type(1) {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.comment > div:nth-of-type(1) p span {
+  color: #cd1319;
+  margin-left: 7px;
+}
+
+.comment, .commentNew{
+  text-align: left;
+}
+
+.commentUser {
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 15px;
+}
+
+.commentUser p {
+  font-size: 18px;
+  margin: 14px 0;
+}
+
+.commentUser p i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.commentUser p:nth-of-type(3) {
+  font-size: 14px;
+  color: #adadad;
+  margin-bottom: 20px;
+}
+
+.replyHidden {
+  display: none;
+  box-sizing: border-box;
+}
+
+input {
+  width: 30%;
+  height: 32px;
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: none;
+  margin: 20px 10px 10px 0;
+}
+
+.boxButton {
+  font-size: 13px;
+  padding: 5px 9px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 1200px;
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 12px;
+  outline: none;
+  padding-left: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btnBox {
+  margin: 10px 0 10px 1150px;
+}
+
+.commentReply {
+  text-align: left;
+  display: flex;
+}
+
+.commentReply span {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 13px 10px 0;
+}
+

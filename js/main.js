@@ -8,7 +8,7 @@ $(document).ready(function () {
   window.onkeydown = function () {
     var kcode = event.keyCode;
     let id = "";
-    if (kcode == 116) {
+    if (kcode == 116 || (event.ctrlKey == true && (kcode == 78 || kcode == 82))) {
       id = location.href.split("?id=")[1];
       if (!isTop) {
         if (id.indexOf("&") != -1) {
@@ -44,6 +44,7 @@ function SetEvent() {
 
 function header_on() {
   isTop = true;
+
   $(".innerHeader").addClass("on");
   $(".innerHeader .gnb > li > div nav .inner").addClass("on");
 
@@ -91,31 +92,23 @@ const scrollPage = (event) => {
   if (delta < 0) {
     if (elmSelector !== 0) {
       try {
-        moveTop =
-          window.pageYOffset +
-          elmSelector.nextElementSibling.getBoundingClientRect().top -
-          header_height -
-          20;
+        moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top - header_height - 20;
       } catch (e) {}
     }
   }
   const body = document.querySelector("html");
   window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
-  document
-    .querySelector(".slider")
-    .removeEventListener("mousewheel", scrollPage);
+  document.querySelector(".slider").removeEventListener("mousewheel", scrollPage);
 };
 
 $(function () {
   $(window).scroll(function () {
     let navbar = $(this).scrollTop();
-    console.log(navbar);
+    // console.log(navbar);
     let $header = $("header");
 
     if (navbar <= 10) {
-      document
-        .querySelector(".slider")
-        .addEventListener("mousewheel", scrollPage);
+      document.querySelector(".slider").addEventListener("mousewheel", scrollPage);
     }
 
     if (navbar > 480) {
@@ -167,7 +160,7 @@ $(document).ready(function () {
   window.addEventListener(
     "scroll",
     _.throttle(function () {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       if (window.scrollY > 500) {
         quickMenu.style.display = "block";
       } else {

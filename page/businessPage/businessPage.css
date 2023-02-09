@@ -693,7 +693,7 @@ table {
 .operProduct p {
   font-size: 18px;
   line-height: 30px;
-  margin-left: 26px;
+  margin: 20px 0 0 26px;
 }
 
 .consultingTop .Consulting_Back01 {

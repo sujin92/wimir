@@ -22,9 +22,6 @@
     <script src="/js/main.js"></script>
     <script src="/js/subMenu.js"></script>
     <script src="/js/tab.js"></script>
-    <!-- Main Quill library -->
-    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
-    <script src='./quill-emoji.js'></script>
 
     <!-- Theme included stylesheets -->
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
@@ -42,25 +39,23 @@
 
     <section id="loadPage">
         <div class="container">
-          <h2>게시글 작성</h2>
+          <h2>문의하기</h2>
           <div>
             <input type="text" id="title" placeholder="제목">
             <input type="text" id="author" placeholder="작성자">
             <input type="password" id="password" placeholder="비밀번호">
-            <div>
-              <button class="write-type" type="button">제품소개</button>
-              <button class="write-type" type="button">정보공유</button>
-              <button class="write-type" type="button">공식 SNS</button>
-              <button class="write-type" type="button">NEWS</button>
-            </div>
-            <div>
-              <input type="text" class="introImg" placeholder="썸네일 이미지">
-              <label for="thumbnail-upload" type="text">파일선택</label><p id="thumbnail-name">선택된 파일 없음선택된 파일 없음선택된 파일 없음선택된 파일 없음선택된 파일 없음선택된 파일 없음선택된 파일 없음선택된 파일 없음</p>
-              <input id="thumbnail-upload" type="file">
+            <div class="inquiryPart">
+              <button class="write-type" type="button">모니터링</button>
+              <button class="write-type" type="button">FEMS</button>
+              <button class="write-type" type="button">작업지시</button>
+              <button class="write-type" type="button">컨설팅</button>
+              <button class="write-type onOff" type="button">온·오프라인</button>
             </div>
           </div>
         </div>
-        <div id="editor"></div>
+        <div>
+          <textarea placeholder="내용을 입력하세요." class="inquiryText" rows="30"></textarea>
+        </div>
         <button type="button" class="registerbtn">등록</button>
     </section>
 

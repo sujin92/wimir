@@ -44,7 +44,7 @@
 
     <section id="center">
       <div class="centerTop">
-        <li class="centerImg" style="background-image: url(/images/Service_background.jpg)"></li>
+        <li class="centerImg"></li>
         <h2 class="animate__animated animate__fadeInUp">고객지원</h2>
       </div>
 
@@ -53,15 +53,24 @@
           <div class="tab">
             <ul>
               <li class="centertab">
-                <a class="tablinks" onclick="opentab(event, 'notice')" id="defaultOpen"> 공지사항 </a>
+                <a class="tablinks inquiry" onclick="opentab(event, 'inquiry')" id="defaultOpen"> 문의하기 </a>
               </li>
               <li>
-                <a class="tablinks" onclick="opentab(event, 'inquiry')"> 문의하기 </a>
+                <a class="tablinks notice" onclick="opentab(event, 'notice')"> 공지사항 </a>
               </li>
               <li>
-                <a class="tablinks" onclick="opentab(event, 'faq')"> FAQ </a>
+                <a class="tablinks faq" onclick="opentab(event, 'faq')"> FAQ </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div class="dropdownMobile">
+          <button onclick="myFunction()" class="dropbtn">고객지원<i class="fa fa-caret-down"></i></button>
+          <div id="menuDropdown" class="dropdown-content">
+            <a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a>
+            <a href="/page/centerPage/centerPage.html?id=notice">공지사항</a>
+            <a href="/page/centerPage/centerPage.html?id=faq">FAQ</a>
           </div>
         </div>
 
@@ -75,11 +84,12 @@
                 <input type="text" id="search" placeholder="검색어를 입력해주세요" class="search" />
               </form>
               <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="/page/technologyWritePage.html" class="write">글쓰기</a>
             </div>
 
             <div class="noticeList">
               <div class="noticeListTop">
-                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <p>총 <span>9</span>건<em>의 게시물이 있습니다.</em></p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -89,70 +99,53 @@
 
               <div class="noticeListBottom">
                 <ul class="noticeTitle">
-                  <li><a href="#">NO</a></li>
-                  <li><a href="#">카테고리</a></li>
-                  <li><a href="#">제목</a></li>
-                  <li><a href="#">날짜</a></li>
+                  <li><a>NO</a></li>
+                  <li><a>카테고리</a></li>
+                  <li><a>제목</a></li>
+                  <li><a>날짜</a></li>
+                  <li><a>조회수</a></li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#" class="noticeColor">주요공지</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.위미르 홈페이지가 리뉴얼 되었습니다.위미르 홈페이지가 리뉴얼 되었습니다.위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">10</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#" class="noticeColor">주요공지</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
-                </ul>
-                <ul class="noticeList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">주요공지</a></li>
-                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
-                  <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">10</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">전체공지</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">10</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">전체공지</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">10</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">전체공지</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">10</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">전체공지</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
-                </ul>
-                <ul class="noticeList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#">전체공지</a></li>
-                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
-                  <li><a href="#">2023-01-18</a></li>
-                </ul>
-                <ul class="noticeList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#">전체공지</a></li>
-                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
-                  <li><a href="#">2023-01-18</a></li>
-                </ul>
-                <ul class="noticeList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#">전체공지</a></li>
-                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
-                  <li><a href="#">2023-01-18</a></li>
-                </ul>
-                <ul class="noticeList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#">전체공지</a></li>
-                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
-                  <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">10</a></li>
                 </ul>
               </div>
 
@@ -177,11 +170,12 @@
                 <input type="text" id="search" placeholder="검색어를 입력해주세요" class="search" />
               </form>
               <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="/page/inquiryPage.html" class="write inquiryBn">문의하기</a>
             </div>
 
             <div class="noticeList inquiryList">
               <div class="noticeListTop inquiryListTop">
-                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <p>총 <span>9</span>건<em>의 게시물이 있습니다.</em></p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -271,7 +265,6 @@
                   <li><a href="#">2023-02-02</a></li>
                 </ul>
               </div>
-              <a href="#" class="inquiry">문의하기</a>
               <div class="listNumber">
                 <i class="fa-solid fa-angles-left"></i>
                 <i class="fa-solid fa-angle-left"></i>
@@ -301,6 +294,8 @@
                 <i class="fa-solid fa-a"></i>
                 <p>
                   제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가 한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘많은<br />
+                  제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는만큼<br />
+                  부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이 문의를 주신답니다!제조업 공장에는 수많은 설비가 설치되어 있죠? 많은 설비가 한꺼번에 가동되려면 정말 많은 전력이 사용되는데요! 그래서 요즘많은<br />
                   제조업에서 소모되는 전력량 체크를 위해​ 에너지 모니터링을 할수 있는 FEMS 구축에 관심을 가지고 있어요. 관심이 높아지는만큼<br />
                   부산 에너지 모니터링, FEMS 구축 전문 위미르(주)에게 많이 문의를 주신답니다!
                 </p>

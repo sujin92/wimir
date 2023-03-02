@@ -55,7 +55,6 @@
       <div class="technologyTop">
         <li
           class="technologyImg"
-          style="background-image: url(/images/technology_background.jpg)"
         ></li>
         <h2 class="animate__animated animate__fadeInUp">기술현황</h2>
       </div>
@@ -90,6 +89,15 @@
           </div>
         </div>
 
+        <div class="dropdownMobile">
+          <button onclick="myFunction()" class="dropbtn">기술현황<i class="fa fa-caret-down"></i></button>
+          <div id="menuDropdown" class="dropdown-content">
+            <a href="/page/technologyPage/technologyPage.html?id=result">수행실적</a>
+            <a href="/page/technologyPage/technologyPage.html?id=confirm">인증현황</a>
+            <a href="/page/technologyPage/technologyPage.html?id=material">자료실</a>
+          </div>
+        </div>
+
         <div id="result" class="tabcontent">
           <div class="resultSection01">
             <div class="resultText">
@@ -105,11 +113,12 @@
                 />
               </form>
               <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="/page/technologyWritePage.html" class="write">글쓰기</a>
             </div>
 
             <div class="resultList">
               <div class="resultListTop">
-                <p>총 <span>9</span>건의 게시물이 있습니다.</p>
+                <p>총 <span>9</span>건<em>의 게시물이 있습니다.</em></p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -120,11 +129,17 @@
                 <div class="listBox">
                   <a href="#">
                     <img src="/images/resultList01.jpg" alt="수행실적" />
-                    <h4>설비 모니터링 시스템 | 미*** 업체</h4>
+                    <h4>설비 모니터링 시스템 | 미*** 업체미*** 업체</h4>
                   </a>
                   <span></span>
                   <span class="lineBottom"></span>
-                  <p>2023-01-13</p>
+                  <div class="listBoxBottom">
+                    <div>
+                      <i class="fa-solid fa-eye viewCount"></i>
+                      <em>20</em>
+                    </div>
+                    <p>2023-01-13</p>
+                  </div>
                 </div>
                 <div class="listBox">
                   <a href="#">
@@ -133,7 +148,13 @@
                   </a>
                   <span></span>
                   <span class="lineBottom"></span>
-                  <p>2023-01-13</p>
+                  <div class="listBoxBottom">
+                    <div>
+                      <i class="fa-solid fa-eye"></i>
+                      <em>20</em>
+                    </div>
+                    <p>2023-01-13</p>
+                  </div>
                 </div>
                 <div class="listBox">
                   <a href="#">
@@ -142,7 +163,13 @@
                   </a>
                   <span></span>
                   <span class="lineBottom"></span>
-                  <p>2023-01-13</p>
+                  <div class="listBoxBottom">
+                    <div>
+                      <i class="fa-solid fa-eye"></i>
+                      <em>20</em>
+                    </div>
+                    <p>2023-01-13</p>
+                  </div>
                 </div>
                 <div class="listBox">
                   <a href="#">
@@ -151,7 +178,13 @@
                   </a>
                   <span></span>
                   <span class="lineBottom"></span>
-                  <p>2023-01-13</p>
+                  <div class="listBoxBottom">
+                    <div>
+                      <i class="fa-solid fa-eye"></i>
+                      <em>20</em>
+                    </div>
+                    <p>2023-01-13</p>
+                  </div>
                 </div>
                 <div class="listBox">
                   <a href="#">
@@ -160,7 +193,13 @@
                   </a>
                   <span></span>
                   <span class="lineBottom"></span>
-                  <p>2023-01-13</p>
+                  <div class="listBoxBottom">
+                    <div>
+                      <i class="fa-solid fa-eye"></i>
+                      <em>20</em>
+                    </div>
+                    <p>2023-01-13</p>
+                  </div>
                 </div>
                 <div class="listBox">
                   <a href="#">
@@ -169,7 +208,13 @@
                   </a>
                   <span></span>
                   <span class="lineBottom"></span>
-                  <p>2023-01-13</p>
+                  <div class="listBoxBottom">
+                    <div>
+                      <i class="fa-solid fa-eye"></i>
+                      <em>20</em>
+                    </div>
+                    <p>2023-01-13</p>
+                  </div>
                 </div>
               </div>
               <div class="listNumber">
@@ -225,10 +270,10 @@
 
         <div id="material" class="tabcontent">
           <div class="noticeSection01">
-            <div class="noticeText">
+            <div class="noticeText resultText">
               <h2>자료실<span>.</span></h2>
             </div>
-            <div class="noticeSearch">
+            <div class="noticeSearch resultSearch">
               <form id="form">
                 <input
                   type="text"
@@ -238,11 +283,12 @@
                 />
               </form>
               <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="/page/technologyWritePage.html" class="write">글쓰기</a>
             </div>
 
-            <div class="noticeList">
-              <div class="noticeListTop">
-                <p>총 <span>5</span>건의 게시물이 있습니다.</p>
+            <div class="noticeList resultList">
+              <div class="noticeListTop resultListTop">
+                <p>총 <span>5</span>건<em>의 게시물이 있습니다.</em></p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -252,34 +298,40 @@
 
               <div class="noticeListBottom">
                 <ul class="noticeTitle">
-                  <li><a href="#">NO</a></li>
-                  <li><a href="#">제목</a></li>
-                  <li><a href="#">날짜</a></li>
+                  <li>NO</li>
+                  <li>제목</li>
+                  <li>날짜</li>
+                  <li>조회수</li>
+                </ul>
+                <ul class="noticeList">
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.위미르 홈페이지가 리뉴얼 되었습니다.위미르 홈페이지가 리뉴얼 되었습니다.위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
+                  <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">20</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">20</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">20</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">20</a></li>
                 </ul>
                 <ul class="noticeList">
                   <li><a href="#">30</a></li>
                   <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
                   <li><a href="#">2023-01-18</a></li>
-                </ul>
-                <ul class="noticeList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#">위미르 홈페이지가 리뉴얼 되었습니다.</a></li>
-                  <li><a href="#">2023-01-18</a></li>
+                  <li><a href="#">20</a></li>
                 </ul>
               </div>
 

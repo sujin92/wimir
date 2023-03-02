@@ -144,6 +144,7 @@ table {
 
 #loadPage h2 {
   font-size: 23px;
+  line-height: 30px;
   padding-bottom: 20px;
   border-bottom: 2px solid #cd1319;
 }
@@ -227,6 +228,7 @@ input {
 }
 
 .boxButton {
+  text-align: center;
   font-size: 13px;
   padding: 5px 9px;
   border: 1px solid #c1c1c1;
@@ -236,7 +238,8 @@ input {
 }
 
 textarea {
-  width: 1200px;
+  width: 100%;
+  resize: none;
   font-size: 15px;
   border: 1px solid #c1c1c1;
   border-radius: 12px;
@@ -247,7 +250,10 @@ textarea {
 }
 
 .btnBox {
-  margin: 10px 0 10px 1150px;
+  font-size: 16px;
+  margin: 30px 0;
+  padding: 8px 18px;
+  font-weight: 500;
 }
 
 .commentReply {
@@ -261,3 +267,119 @@ textarea {
   margin: 13px 10px 0;
 }
 
+/*미디어쿼리*/
+@media (max-width: 1290px) {
+  #loadPage {
+    width: 1025px;
+  }
+  #loadPage .loadPageInner {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #loadPage {
+    width: 961px;
+  }
+}
+
+@media (max-width: 960px) {
+  #loadPage {
+    width: 769px;
+  }
+}
+
+@media (max-width: 768px) {
+  #loadPage {
+    width: 641px;
+  }
+}
+
+@media (max-width: 640px) {
+  #loadPage {
+    width: 581px;
+  }
+}
+
+@media (max-width: 580px) {
+  #loadPage {
+    width: 481px;
+  }
+  #loadPage h2 {
+    font-size: 18px;
+  }
+  #loadPage div .loadPageTop {
+    font-size: 14px;
+  }
+  .revise button {
+    padding: 5px 10px;
+    margin: 50px 0 50px 10px;
+  }
+  .commentUser p {
+    font-size: 16px;
+    margin: 14px 0;
+  }
+  .commentUser p i {
+    font-size: 16px;
+  }
+  input {
+    height: 28px;
+  }
+  input::placeholder {
+    font-size: 14px;
+  }
+  textarea::placeholder {
+    font-size: 14px;
+  }
+  .btnBox {
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #loadPage {
+    width: 376px;
+  }
+}
+
+@media (max-width: 375px) {
+  #loadPage {
+    width: 301px;
+  }
+  #loadPage h2 {
+    font-size: 16px;
+  }
+  #loadPage div .loadPageTop {
+    font-size: 12px;
+  }
+  #loadPage > div > div h3 span {
+    margin-left: 5px;
+  }
+  .commentUser p {
+    font-size: 14px;
+  }
+  .commentUser p i {
+    font-size: 14px;
+  }
+  .commentUser p:nth-of-type(3) {
+    font-size: 12px;
+  }
+  input {
+    height: 25px;
+  }
+  textarea::placeholder {
+    font-size: 12px;
+  }
+  input::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  #loadPage {
+    width: 280px;
+  }
+  #loadPage > div > div h3 span {
+    margin-left: 2px;
+  }
+}

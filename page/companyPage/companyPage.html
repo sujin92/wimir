@@ -38,7 +38,7 @@
 
     <section id="company">
       <div class="companyTop">
-        <li class="companyImg" style="background-image: url(/images/company_background.jpg)"></li>
+        <li class="companyImg"></li>
         <h2 class="animate__animated animate__fadeInUp">회사소개</h2>
       </div>
 
@@ -62,6 +62,16 @@
           </div>
         </div>
 
+        <div class="dropdownMobile">
+          <button onclick="myFunction()" class="dropbtn">회사소개<i class="fa fa-caret-down"></i></button>
+          <div id="menuDropdown" class="dropdown-content">
+            <a href="/page/companyPage/companyPage.html?id=intro">기업소개</a>
+            <a href="/page/companyPage/companyPage.html?id=history">연혁</a>
+            <a href="/page/companyPage/companyPage.html?id=group">조직도</a>
+            <a href="/page/companyPage/companyPage.html?id=map">찾아오시는 길</a>
+          </div>
+        </div>
+
         <div id="intro" class="tabcontent">
           <div class="introSection01">
             <div class="introText">
@@ -70,8 +80,8 @@
                 <strong>Smartening of Manufacturing Sites</strong>
                 <h3>제조 현장의 스마트화<br /><span>WIMIR가 함께 하겠습니다.</span></h3>
                 <p>
-                  위미르(주)는 제조업 중심의 빅데이터, 딥러닝 연구 노하우를 바탕으로 제조업의 혁신을<br />
-                  실현하는 <span>AI 기반 솔루션 전문 기업</span>입니다.<span>지속적인 연구개발과 다양한 사업 참여</span>를 통해고유의<br />
+                  위미르(주)는 제조업 중심의 빅데이터, 딥러닝 연구 노하우를 바탕으로 제조업의 혁신을
+                  실현하는 <span>AI 기반 솔루션 전문 기업</span>입니다. <span>지속적인 연구개발과 다양한 사업 참여</span>를 통해고유의
                   기술력을 축적하여
                   <span>끊임없이 성장하는 AI 솔루션 전문 기업</span>으로 앞장서나가고 있습니다.
                 </p>
@@ -123,7 +133,7 @@
                 다양한 솔루션 개발 시도
               </h3>
               <p>
-                위미르(주)는 딥러닝 분야 기술 개발 및 연구 과제를 통해 기술 역량이<br />
+                위미르(주)는 딥러닝 분야 기술 개발 및 연구 과제를 통해 기술 역량이 
                 축척되어 있으며 빅데이터 기반의 이해도가 높은 기업입니다.
               </p>
             </div>
@@ -161,34 +171,32 @@
               <h3>빅데이터 기반 스마트 공장화의 기대효과</h3>
             </div>
             <div class="introImg2"></div>
-            <div class="expectation">
-              <div class="expectationIcon">
-                <img src="/icon/intro09.png" alt="아이콘" />
-                <h4>장애타임 최소화</h4>
-              </div>
-              <div class="expectationIcon">
-                <img src="/icon/intro10.png" alt="아이콘" />
-                <h4>원격 가동감시</h4>
-              </div>
-              <div class="expectationIcon">
-                <img src="/icon/intro11.png" alt="아이콘" />
-                <h4>내부 자료 축척</h4>
-              </div>
-            </div>
-            <div class="expectation">
-              <div class="expectationIcon">
-                <img src="/icon/intro12.png" alt="아이콘" />
-                <h4>최적화된 현장 관리</h4>
-              </div>
-              <div class="expectationIcon">
-                <img src="/icon/intro13.png" alt="아이콘" />
-                <h4>생산 계획 수립</h4>
-              </div>
-              <div class="expectationIcon">
-                <img src="/icon/intro14.png" alt="아이콘" />
-                <h4>안정적인 S/W 관리</h4>
-              </div>
-            </div>
+              <div class="expectation">
+                <div class="expectationIcon">
+                  <img src="/icon/intro09.png" alt="아이콘" />
+                  <h4>장애타임 최소화</h4>
+                </div>
+                <div class="expectationIcon">
+                  <img src="/icon/intro10.png" alt="아이콘" />
+                  <h4>원격 가동감시</h4>
+                </div>
+                <div class="expectationIcon">
+                  <img src="/icon/intro11.png" alt="아이콘" />
+                  <h4>내부 자료 축척</h4>
+                </div>
+                <div class="expectationIcon">
+                  <img src="/icon/intro12.png" alt="아이콘" />
+                  <h4>최적화된 현장 관리</h4>
+                </div>
+                <div class="expectationIcon">
+                  <img src="/icon/intro13.png" alt="아이콘" />
+                  <h4>생산 계획 수립</h4>
+                </div>
+                <div class="expectationIcon">
+                  <img src="/icon/intro14.png" alt="아이콘" />
+                  <h4>안정적인 S/W 관리</h4>
+                </div>
+              </di >
           </div>
 
           <div class="introSection04">
@@ -219,6 +227,7 @@
             </div>
           </div>
         </div>
+        </div>
 
         <div id="history" class="tabcontent">
           <div class="historySection01">
@@ -227,21 +236,23 @@
               <div class="animate__animated animate__fadeInUp">
                 <strong>WIMIR History</strong>
                 <h3>WIMIR 연혁</h3>
+                <img class="lineBack" src="/images/lineBack.png" alt="line" />
                 <h4>
                   2013년부터 지금까지, 더 넓은 세상을 위해<br />
                   위미르가 걸어온 길입니다.
                 </h4>
               </div>
             </div>
-            <img class="lineBack" src="/images/lineBack.png" alt="line" />
 
-            <div class="historyinner">
+            <div class="historyinnerImg">
               <img src="/images/logoBack.png" alt="로고" />
               <img src="/images/historyBack1.png" alt="등록증" />
               <img src="/images/historyBack2.png" alt="특허증" />
               <img src="/images/historyBack3.png" alt="인증서" />
               <img src="/images/historyBack4.png" alt="확인서" />
+            </div >
 
+            <div class="historyinner">
               <div>
                 <h3>2013</h3>
                 <ul>
@@ -400,7 +411,8 @@
                 <h3>WIMIR 조직도</h3>
               </div>
             </div>
-            <img src="/images/chart.png" alt="조직도" />
+            <img class="chartWeb" src="/images/chart.png" alt="조직도" />
+            <img class="chartMobile" src="/images/chartMobile.png" alt="조직도"/>
           </div>
         </div>
 

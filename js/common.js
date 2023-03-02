@@ -79,12 +79,12 @@ let headerCont = `
     </li>
 
     <li>
-      <a href="/page/centerPage/centerPage.html?id=notice&top=y" class="textChange">고객지원</a>
+      <a href="/page/centerPage/centerPage.html?id=inquiry" class="textChange">고객지원</a>
       <div id="subwrapper">
         <nav id="subnav">
           <ul class="inner">
+          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
             <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
-            <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
             <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
           </ul>
         </nav>
@@ -102,7 +102,7 @@ let headerCont = `
     <img src="/images/wimir_background.png" alt="위미르" />
     <ul class="side_gnb">
       <li>
-        <a href="#">회사소개</a>
+        <a>회사소개</a>
         <ul class="side_inner">
           <li><a href="/page/companyPage/companyPage.html?id=intro">기업소개</a></li>
           <li><a href="/page/companyPage/companyPage.html?id=history">연혁</a></li>
@@ -111,7 +111,7 @@ let headerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">사업분야</a>
+        <a>사업분야</a>
         <ul class="side_inner">
           <li><a href="/page/businessPage/businessPage.html?id=monitoring">실시간 모니터링</a></li>
           <li><a href="/page/businessPage/businessPage.html?id=fems">FEMS</a></li>
@@ -121,7 +121,7 @@ let headerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">기술현황</a>
+        <a>기술현황</a>
         <ul class="side_inner">
           <li><a href="/page/technologyPage/technologyPage.html?id=result">수행실적</a></li>
           <li><a href="/page/technologyPage/technologyPage.html?id=confirm">인증현황</a></li>
@@ -129,7 +129,7 @@ let headerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">커뮤니티</a>
+        <a>커뮤니티</a>
         <ul class="side_inner">
           <li><a href="/page/communityPage/communityPage.html?id=introduce">제품소개</a></li>
           <li><a href="/page/communityPage/communityPage.html?id=information">정보공유</a></li>
@@ -138,7 +138,7 @@ let headerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">인재채용</a>
+        <a>인재채용</a>
         <ul class="side_inner">
           <li><a href="/page/staffPage/staffPage.html?id=type">인재상</a></li>
           <li><a href="/page/staffPage/staffPage.html?id=recruitment">채용안내</a></li>
@@ -146,10 +146,10 @@ let headerCont = `
         </ul>
       </li>
       <li>
-        <a href="#">고객지원</a>
+        <a>고객지원</a>
         <ul class="side_inner">
+        <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
           <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
-          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
           <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
         </ul>
       </li>
@@ -178,9 +178,6 @@ let quickmenuSpace = document.querySelector("#quickmenu");
 let quickmenuCont = `
 <ul>
         <li class="topnone">
-          <a href="#">sns<br />바로가기</a>
-        </li>
-        <li class="topnone">
           <a href="#"
             ><img src="/icon/instagram.png" alt="인스타그램" width="30px"
           /></a>
@@ -196,7 +193,9 @@ let quickmenuCont = `
           /></a>
         </li>
         <li class="topnone">
-          <a href="#">카카오톡<br />상담</a>
+          <a href="#"
+            ><img src="/icon/email.png" alt="이메일문의" width="30px"
+            /></a>
         </li>
         <li class="topnone">
           <a href="#"
@@ -272,10 +271,10 @@ let footerCont = `
         </ul>
       </li>
       <li>
-        <a href="/page/centerPage/centerPage.html?id=notice&top=y">고객지원</a>
+        <a href="/page/centerPage/centerPage.html?id=inquiry">고객지원</a>
         <ul>
+        <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
           <li><a href="/page/centerPage/centerPage.html?id=notice">공지사항</a></li>
-          <li><a href="/page/centerPage/centerPage.html?id=inquiry">문의하기</a></li>
           <li><a href="/page/centerPage/centerPage.html?id=faq">FAQ</a></li>
         </ul>
       </li>

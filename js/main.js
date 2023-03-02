@@ -38,14 +38,14 @@ function SetUI() {
 }
 
 function SetEvent() {
-  $(".innerHeader").mouseover(header_on);
-  $(".innerHeader").mouseout(header_off);
+    $(".innerHeader").mouseover(header_on);
+    $(".innerHeader").mouseout(header_off);
 }
 
 function header_on() {
   isTop = true;
 
-  $(".innerHeader").addClass("on");
+  $(".innerHeader").addClass("on"); 
   $(".innerHeader .gnb > li > div nav .inner").addClass("on");
 
   document.getElementById("logoChange").src = "/images/logo.png";
@@ -147,7 +147,7 @@ $(document).ready(function () {
     let position = $(window).scrollTop();
     $(".quickmenu")
       .stop()
-      .animate({ top: position + currentPosition + "px" }, 500);
+      .animate({ top: position + currentPosition + "px" }, 100);
   });
   const topMove = document.querySelector(".top").offsetHeight;
 

@@ -147,7 +147,6 @@ header.activated {
 .innerHeader {
   width: 100%;
   margin: 0 auto;
-  padding: 0 40px;
   box-sizing: border-box;
   height: 80px;
   border-bottom: 1px solid rgba(141, 141, 141, 0.2);
@@ -170,7 +169,7 @@ header.activated {
 .innerHeader .gnb {
   display: flex;
   justify-content: center;
-  padding-right: 15%;
+  width: 70%;
 }
 
 .innerHeader .gnb > li {
@@ -303,6 +302,7 @@ header.activated {
   display: none;
   text-align: center;
   z-index: 99;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .innerHeader .side_menu img {
@@ -371,7 +371,7 @@ header.activated {
   position: relative;
   float: left;
   width: 100%;
-  height: 398px;
+  height: 342px;
   display: inline-block;
 }
 
@@ -408,7 +408,7 @@ header.activated {
 /* section01 slider */
 .visual {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -437,7 +437,7 @@ header.activated {
 
 .visual .list .textBox {
   position: absolute;
-  top: 50%;
+  top: 500px;
   left: 20%;
   width: 100%;
   transform: translate(0, -60%);
@@ -1378,12 +1378,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
 
 /*미디어쿼리*/
 @media (max-width: 1290px) {
-  .innerHeader .logo {
-    width: 10%;
-  }
-  .innerHeader div {
-    width: 10%;
-  }
+
   .innerHeader .gnb > li {
     margin: 0 13px;
   }
@@ -1396,9 +1391,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
     height: 350px;
     background-color: #333333;
   }
-  .innerHeader .gnb {
-    padding-right: 9%;
-  }
+
   .innerHeader div h2 {
     width: 70px;
     font-size: 10px;
@@ -1492,6 +1485,10 @@ footer .footerView .footerRight ul > li > ul > li > a {
     }
   }
 
+  .currentPage .inner .bottomBox {
+    top: 52.5%;
+  }
+
   #section04 {
     width: 80%;
   }
@@ -1502,7 +1499,9 @@ footer .footerView .footerRight ul > li > ul > li > a {
 
   .newsPage ul {
     width: 100%;
+    margin-left: 10px;
   }
+
   .newsPage ul li {
     width: 31.3%;
     margin: 0 10px;
@@ -1528,6 +1527,10 @@ footer .footerView .footerRight ul > li > ul > li > a {
   }
   .innerHeader div h2 {
     display: none;
+  }
+
+  .innerHeader .side_menu {
+    width: 1024px;
   }
 
   .visual .list .textBox {
@@ -1574,6 +1577,10 @@ footer .footerView .footerRight ul > li > ul > li > a {
     width: 180px;
   }
 
+  .newsPage ul {
+    margin-left:5px;
+  }
+
   .newsPage ul li {
     width: 31%;
     margin: 0 10px;
@@ -1591,6 +1598,10 @@ footer .footerView .footerRight ul > li > ul > li > a {
   .innerHeader .logo {
     width: 100%;
     left: 50%;
+  }
+  .innerHeader .side_menu {
+    background-image: url(/images/menu_background960.jpg);
+    width: 100%;
   }
   .innerHeader .side_menu .side_gnb li {
     width: 120px;
@@ -1653,18 +1664,26 @@ footer .footerView .footerRight ul > li > ul > li > a {
 
   .inner .bottomBox .snsList {
     width: 100%;
+    margin-left: 10px;
   }
 
   .newsPage {
     height: 700px;
   }
+
+  .newsPage ul {
+    margin-left:10px;
+  }
+
   .newsPage ul li {
     width: 30%;
     margin: 0 12px;
   }
+
   .newsPage > div {
     height: 600px;
   }
+
   .newsPage .btn {
     top: 580px;
   }
@@ -1736,6 +1755,11 @@ footer .footerView .footerRight ul > li > ul > li > a {
   #section04 {
     width: 100%;
   }
+
+  .container .row .product .product_title {
+    margin-left: 2px;
+  }
+
   .container .row .product .product_title li a {
     font-size: 16px;
   }
@@ -1745,6 +1769,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
   }
   .inner .bottomBox .snsList {
     padding-top: 120px;
+    margin-left: 0;
   }
   .inner .bottomBox .snsList li {
     width: 35%;
@@ -1757,6 +1782,11 @@ footer .footerView .footerRight ul > li > ul > li > a {
   .newsPage {
     height: 670px;
   }
+
+  .newsPage ul {
+    margin-left: 5px;
+  }
+
   .newsPage ul li {
     width: 30.7%;
     margin: 0 8px;
@@ -1955,6 +1985,9 @@ footer .footerView .footerRight ul > li > ul > li > a {
   .newsPage {
     height: 620px;
   }
+  .newsPage ul {
+    margin-left:1px;
+  }
   .newsPage ul li {
     width: 30.4%;
   }
@@ -2034,7 +2067,6 @@ footer .footerView .footerRight ul > li > ul > li > a {
   .visual .list .textBox .tit {
     font-size: 35px;
     margin-top: 10px;
-    margin-top: 40%;
   }
   .visual .list .textBox .txt {
     font-size: 16px;
@@ -2195,7 +2227,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
     height: 700px;
   }
   .currentPage .inner #mainText h2 {
-    margin: 0 auto;
+    margin: 50px auto;
     font-size: 32px;
     width: 160px;
   }
@@ -2211,7 +2243,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
     line-height: 35px;
   }
   .currentPage .inner #mainText img {
-    top: 150px;
+    top: 200px;
     margin-left: 80px;
   }
   .currentPage .inner .bottomBox {
@@ -2287,7 +2319,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
     display: none;
   }
   .newsPage .btn {
-    top: 1640px;
+    display: none;
   }
 
   .recruitPage #mainText h2 {
@@ -2468,6 +2500,9 @@ footer .footerView .footerRight ul > li > ul > li > a {
 
   .newsPage .btn {
     top: 1600px;
+  }
+  .newsPage ul {
+    margin-left:0px;
   }
 
   .locationPage #mainText h2 {
@@ -2664,3 +2699,7 @@ footer .footerView .footerRight ul > li > ul > li > a {
     font-size: 10px;
   }
 }
+
+body { overflow: overlay;overflow-x:hidden;  }
+body::-webkit-scrollbar {width: 10px;}
+body::-webkit-scrollbar-thumb {background-color: hsla(0, 3%, 34%, 0.5);border-radius: 100px;}

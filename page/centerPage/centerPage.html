@@ -84,7 +84,7 @@
                 <input type="text" id="search" placeholder="검색어를 입력해주세요" class="search" />
               </form>
               <i class="fa-solid fa-magnifying-glass"></i>
-              <a href="/page/technologyWritePage.html" class="write">글쓰기</a>
+              <a href="/page/centerWritePage.html" class="write">글쓰기</a>
             </div>
 
             <div class="noticeList">
@@ -175,7 +175,7 @@
 
             <div class="noticeList inquiryList">
               <div class="noticeListTop inquiryListTop">
-                <p>총 <span>9</span>건<em>의 게시물이 있습니다.</em></p>
+                <p>총 <span id="boardCount">9</span>건<em>의 게시물이 있습니다.</em></p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -183,94 +183,12 @@
                 </select>
               </div>
 
-              <div class="noticeListBottom inquiryBottom">
+              <div class="noticeListBottom inquiryBottom" id="inquiryBottom">
                 <ul class="noticeTitle inquiryTitle">
-                  <li><a href="#">NO</a></li>
-                  <li><a href="#">항목</a></li>
-                  <li><a href="#">제목</a></li>
-                  <li><a href="#">작성자</a></li>
-                  <li><a href="#">날짜</a></li>
                 </ul>
-
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">설비모니터링</a></li>
-                  <li>
-                    <a href="#">설비모니터링 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">작업지시 프로그램</a></li>
-                  <li>
-                    <a href="#">작업지시 프로그램 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">컨설팅</a></li>
-                  <li>
-                    <a href="#">컨설팅 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">컨설팅</a></li>
-                  <li>
-                    <a href="#">컨설팅 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">컨설팅</a></li>
-                  <li>
-                    <a href="#">컨설팅 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">컨설팅</a></li>
-                  <li>
-                    <a href="#">컨설팅 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">설비모니터링</a></li>
-                  <li>
-                    <a href="#">설비모니터링 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
-                <ul class="noticeList inquiryList">
-                  <li><a href="#">30</a></li>
-                  <li><a href="#" class="noticeColor">작업지시 프로그램</a></li>
-                  <li>
-                    <a href="#">작업지시 프로그램 문의합니다.<i class="fa-solid fa-lock"></i></a>
-                  </li>
-                  <li><a href="#">신**</a></li>
-                  <li><a href="#">2023-02-02</a></li>
-                </ul>
+                
               </div>
-              <div class="listNumber">
-                <i class="fa-solid fa-angles-left"></i>
-                <i class="fa-solid fa-angle-left"></i>
-                <a href="#"><p>1</p></a>
-                <i class="fa-solid fa-angle-right"></i>
-                <i class="fa-solid fa-angles-right"></i>
+              <div id="inquiryPage"  class="listNumber">
               </div>
             </div>
           </div>
@@ -368,4 +286,6 @@
 
     <script src="/js/common.js"></script>
   </body>
+  <script src="./centerPage.js"></script>
+  <script src="./test.js"></script>
 </html>

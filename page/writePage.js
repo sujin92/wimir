@@ -11,16 +11,16 @@ document.querySelectorAll(".write-type").forEach((e) => {
     post_type = e.target.innerText;
     switch (post_type) {
       case "제품소개":
-        upload = 15;
+        upload = "introduce";
         break;
       case "정보공유":
-        upload = 15;
+        upload = "introduce";
         break;
       case "공식 SNS":
-        upload = 15;
+        upload = "introduce";
         break;
       case "NEWS":
-        upload = 15;
+        upload = "introduce";
         break;
     }
   });
@@ -63,23 +63,24 @@ const editor = new Quill("#editor", {
 });
 
 document.querySelector(".registerbtn").addEventListener("click", async (e) => {
-  console.log(document.querySelector("#title").value);
-  console.log(document.querySelector("#author").value);
-  console.log(document.querySelector("#password").value);
-  console.log(document.querySelector("#thumbnail-upload").files[0]);
-  console.log(upload);
-  console.log(editor.root.innerHTML);
+  // console.log(document.querySelector("#title").value);
+  // console.log(document.querySelector("#author").value);
+  // console.log(document.querySelector("#password").value);
+  // console.log(document.querySelector("#thumbnail-upload").files[0]);
+  // console.log(upload);
+  // console.log(editor.root.innerHTML);
 
   
   const formData = new FormData();
   formData.append("image", document.querySelector("#thumbnail-upload").files[0]);
-  const imgSrc = await fetch(`http://localhost:7878/board/${upload}/post/${upload}/image`, {
+  formData.append("session", "U2FsdGVkX1/oHeLhCWQeOhcDD2/UW6ZqF4FAOPbUVnkLxDYNLvLuhAmJ3TbJsI4R")
+  const imgSrc = await fetch(`http://localhost:8000/board/image`, {
     method: 'POST',
     body: formData
   }).then(res => res.json());
 
 
-  fetch(`http://localhost:7878/board/${upload}/post/${upload}`, {
+  fetch(`http://localhost:8000/board/post`, {
     method: "POST",
     headers: {
       'content-type': 'application/json'
@@ -94,9 +95,10 @@ document.querySelector(".registerbtn").addEventListener("click", async (e) => {
       post_password: document.querySelector("#password").value,
       post_isNotice: 0,
       additional: 0,
+      session:"U2FsdGVkX1/oHeLhCWQeOhcDD2/UW6ZqF4FAOPbUVnkLxDYNLvLuhAmJ3TbJsI4R",
+      isPrivate: 0
     }),
-  });
-
+  }).then((res) => console.log(res));
 });
 
 header_on();

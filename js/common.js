@@ -178,22 +178,22 @@ let quickmenuSpace = document.querySelector("#quickmenu");
 let quickmenuCont = `
 <ul>
         <li class="topnone">
-          <a href="#"
+          <a href="https://www.instagram.com/wimir.eladis/"
             ><img src="/icon/instagram.png" alt="인스타그램" width="30px"
           /></a>
         </li>
         <li class="topnone">
-          <a href="#"
+          <a href="https://www.facebook.com/wimirELADIS"
             ><img src="/icon/facebook.png" alt="페이스북" width="30px"
           /></a>
         </li>
         <li class="topnone">
-          <a href="#"
+          <a href="https://blog.naver.com/wimiryj79"
             ><img src="/icon/blog.png" alt="네이버블로그" width="30px"
           /></a>
         </li>
         <li class="topnone">
-          <a href="#"
+          <a href="/page/centerPage/centerPage.html?id=inquiry"
             ><img src="/icon/email.png" alt="이메일문의" width="30px"
             /></a>
         </li>

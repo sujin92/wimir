@@ -5,13 +5,29 @@ window.addEventListener("load", async () => {
   console.log("load");
 
   //커뮤니티
-  fetch("http://localhost:8000/setup/verify", {
+  // fetch("http://localhost:8000/setup/verify", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify({
+  //     session:"U2FsdGVkX1/oHeLhCWQeOhcDD2/UW6ZqF4FAOPbUVnkLxDYNLvLuhAmJ3TbJsI4R"
+  //   }),
+  // })
+  //   .then((res) => res.json())
+  //   .then(async (response) => {
+  //     console.log(response);
+  //     pages = [];
+  //     showContents(response, 1);
+  //   });
+  
+  fetch("http://localhost:8000/board/introduce", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      session:"U2FsdGVkX1/oHeLhCWQeOhcDD2/UW6ZqF4FAOPbUVnkLxDYNLvLuhAmJ3TbJsI4R"
+      order: "new"
     }),
   })
     .then((res) => res.json())
@@ -33,7 +49,7 @@ window.addEventListener("load", async () => {
 });
 
 function search(keyword) {
-  fetch(`http://localhost:7878/board/15/post/15/new?search=all&val=${keyword}`)
+  fetch(`http://localhost:8000/board/15/post/15/new?search=all&val=${keyword}`)
     .then((res) => res.json())
     .then(async (response) => {
       pages = [];
@@ -62,11 +78,11 @@ function changePage(n) {
   const wrapper = document.querySelector("#introduceListBottom");
   wrapper.innerHTML = "";
   currentPage = n;
-  pages[n].forEach((element) => {
+  pages[n].forEach((element) => { 
     wrapper.innerHTML += `
       <div class="listBottomBox">
         <img src="http://211.43.13.171:6060/${element.post_thumbImage}" alt="${element.post_postType}" />
-        <a href="#">
+        <a href="/page/loadPage.html?id=${element.post_id}">
           <div class="listText">
             <h4>${element.post_title}</h4>
             <p>

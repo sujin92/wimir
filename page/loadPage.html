@@ -23,6 +23,7 @@
 
     <script src="/js/subMenu.js"></script>
     <script src="/js/tab.js"></script>
+    <script src="loadPage.js"></script>
 
     <title>WIMIR</title>
   </head>
@@ -49,35 +50,10 @@
         </div>
         <div class="comment">
           <div>
-            <i class="fa-regular fa-comment-dots"></i><p><span>1 </span>Comments</p>
+            <i class="fa-regular fa-comment-dots"></i>
+            <p><span id="count">Loading...</span> Comments</p>
           </div>
           <div class="comments">
-            <div class="commentUser">
-              <p><i class="fa-solid fa-circle-user"></i>김이박</p>
-              <p>댓글 내용을 입력하세요.</p>
-              <p>2023.02.08. 16:10</p>
-              <button type="button" id="reply" class="boxButton">답글</button>
-              <button type="button" class="boxButton">삭제</button>
-            </div>
-            <div id="replyHeading" class="replyHidden">
-              <div>
-                <input type="text" id="userName" placeholder="이름">
-                <input type="password" id="userPw" placeholder="비밀번호">
-              </div>
-              <div>
-                <textarea placeholder="내용을 입력하세요." id="userComment" rows="5"></textarea>
-              </div>
-              <button type="button" class="boxButton btnBox">등록</button>
-            </div>
-          </div>
-        </div>
-        <div class="commentUser commentReply">
-          <span>└</span>
-          <div>
-            <p><i class="fa-solid fa-circle-user"></i>김이박</p>
-            <p>댓글 내용을 입력하세요.</p>
-            <p>2023.02.08. 16:10</p>
-            <button type="button" class="boxButton">삭제</button>
           </div>
         </div>
         <div class="commentNew">
@@ -89,7 +65,7 @@
             <textarea placeholder="내용을 입력하세요." id="userComment" rows="5"></textarea>
           </div>
         </div>
-        <button type="button" class="boxButton btnBox">등록</button>
+        <button type="button" class="boxButton btnBox" onclick="addComment()">등록</button>
       </div>
     </section>
 

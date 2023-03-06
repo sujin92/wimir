@@ -47,20 +47,15 @@
             <input type="text" id="title" placeholder="제목">
             <input type="text" id="author" placeholder="작성자">
             <input type="password" id="password" placeholder="비밀번호">
-            <div>
-              <button class="write-type" type="button">제품소개</button>
-              <button class="write-type" type="button">정보공유</button>
-              <button class="write-type" type="button">공식 SNS</button>
-              <button class="write-type" type="button">NEWS</button>
-            </div>
-            <div>
-              <input type="text" class="introImg" placeholder="썸네일 이미지">
-              <label for="thumbnail-upload" type="text">파일선택</label><p id="thumbnail-name">선택된 파일 없음</p>
-              <input id="thumbnail-upload" type="file">
+            <div class="inquiryPart">
+              <button class="write-type" type="button">주요공지</button>
+              <button class="write-type" type="button">전체공지</button>
             </div>
           </div>
         </div>
-        <div id="editor"></div>
+        <div>
+          <textarea placeholder="내용을 입력하세요." class="inquiryText" rows="30"></textarea>
+        </div>
         <button type="button" class="registerbtn">등록</button>
     </section>
 

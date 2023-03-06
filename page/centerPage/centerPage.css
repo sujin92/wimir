@@ -476,6 +476,8 @@ input {
 }
 
 .inquiryBottom .inquiryList li:nth-child(2) .noticeColor {
+  padding: 2px 12px;
+  border-radius: 20px;
   border: 1px solid #e0e0e0;
   background-color: #e0e0e0;
   color: #333333;

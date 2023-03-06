@@ -137,7 +137,7 @@ table {
   width: 1200px;
   margin: 150px auto;
   text-align: center;
-  height: 1000px;
+  height: auto;
   color: #333333;
   font-family: "Noto Sans KR", sans-serif;
 }

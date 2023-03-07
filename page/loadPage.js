@@ -19,7 +19,7 @@ window.addEventListener('load', async () => {
 
   document.querySelector(".writer").innerText = content.post_writer
   document.querySelector(".writerData").innerText = content.post_uploadTime
-  document.querySelector(".hits").innerText = 10 // 조회수
+  document.querySelector(".hits").innerText = content.post_count
   document.querySelector(".loadContent").innerHTML = content.post_content
 
   document.querySelector(".loadPageInner > h2").innerText = content.post_title
@@ -53,6 +53,19 @@ window.addEventListener('load', async () => {
     }
   }
 })
+
+function createComment({
+  comment_id,
+  comment_writer,
+  comment_content,
+  comment_uploadTime,
+  comment_isReply,
+  relpy_ref,
+  reply_step
+}){
+  const element = document.createElement('div');
+  element.id = `comment_${comment_id}`;
+}
 
 function createComment({
   comment_id,

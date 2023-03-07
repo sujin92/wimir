@@ -36,6 +36,7 @@ window.addEventListener("load", async () => {
       pages = [];
       showContents(response, 1);
     });
+    
 
   // //수행실적
   // fetch("http://localhost:7878/board/28/post/28/new").then(async (response) => {

@@ -346,6 +346,11 @@ input {
   position: relative;
 }
 
+.resultList .resultListBottom .listBox a img {
+  width: 340px;
+  height: 340px;
+}
+
 .resultList .resultListBottom .listBox:hover .lineBottom {
   width: 340px;
   transition: all 1s;
@@ -396,21 +401,27 @@ input {
   color: #c1c1c1;
 }
 
-.resultList .listNumber {
+.listNumber {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 50px 0 120px 0;
 }
 
-.resultList .listNumber a i {
+.listNumber i {
   color: #333333;
 }
 
-.resultList .listNumber p {
-  color: #cd1319;
-  font-weight: 600;
+.listNumber p,
+i {
   font-size: 18px;
   padding: 0 10px;
+  color: #333333;
+}
+
+.listNumber .introducePage {
+  color: #333333;
+  font-weight: 500;
 }
 
 /* 인증현황 */
@@ -635,8 +646,9 @@ i {
 .resultSection01 {
   width: 1025px;
 }
-.resultList .resultListBottom .listBox img {
+.resultList .resultListBottom .listBox a img {
   width: 310px;
+  height: 310px;
 }
 .resultList .resultListBottom .listBox h4 {
   width: 310px;
@@ -716,8 +728,9 @@ i {
   .resultSection01 {
     width: 769px;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 240px;
+    height: 240px;
   }
   .resultList .resultListBottom .listBox:hover .lineBottom {
     width: 240px;
@@ -764,8 +777,9 @@ i {
   .resultSection01 {
     width: 641px;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 300px;
+    height: 300px;
   }
   .resultList .resultListBottom .listBox:hover .lineBottom {
     width: 300px;
@@ -874,8 +888,9 @@ i {
   .resultSearch i {
     top: 838px;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 280px;
+    height: 280px;
   }
   .resultList .resultListBottom .listBox:hover .lineBottom {
     width: 280px;
@@ -912,8 +927,9 @@ i {
   .resultSection01 {
     width: 481px;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 230px;
+    height: 230px;
   }
   .resultList .resultListBottom .listBox:hover .lineBottom {
     width: 230px;
@@ -1008,8 +1024,9 @@ i {
     width: 180px;
     overflow: hidden;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 180px;
+    height: 180px;
   }
   .resultList .resultListBottom .listBox h4 {
     width: 180px;
@@ -1119,8 +1136,9 @@ i {
   .resultList .resultListBottom .listBox {
     width: 145px;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 145px;
+    height: 145px;
   }
   .resultList .resultListBottom .listBox h4 {
     width: 145px;
@@ -1181,8 +1199,9 @@ i {
     width: 120px;
     margin: 0 10px;
   }
-  .resultList .resultListBottom .listBox img {
+  .resultList .resultListBottom .listBox a img {
     width: 120px;
+    height: 120px;
   }
   .resultList .resultListBottom .listBox span {
     top: 165px;

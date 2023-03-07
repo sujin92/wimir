@@ -84,7 +84,7 @@
                 <input type="text" id="search" placeholder="검색어를 입력해주세요" class="search" />
               </form>
               <i class="fa-solid fa-magnifying-glass"></i>
-              <a href="/page/centerWritePage.html" class="write">글쓰기</a>
+              <a href="/page/technologyWritePage.html" class="write">글쓰기</a>
             </div>
 
             <div class="noticeList">
@@ -175,7 +175,7 @@
 
             <div class="noticeList inquiryList">
               <div class="noticeListTop inquiryListTop">
-                <p>총 <span id="boardCount">9</span>건<em>의 게시물이 있습니다.</em></p>
+                <p>총 <span id="boardCount">0</span>건<em>의 게시물이 있습니다.</em></p>
                 <select name="sort">
                   <option value="최신순">최신순</option>
                   <option value="조회순">조회순</option>
@@ -185,10 +185,22 @@
 
               <div class="noticeListBottom inquiryBottom" id="inquiryBottom">
                 <ul class="noticeTitle inquiryTitle">
+                  <li><a href="#">NO</a></li>
+                  <li><a href="#">항목</a></li>
+                  <li><a href="#">제목</a></li>
+                  <li><a href="#">작성자</a></li>
+                  <li><a href="#">날짜</a></li>
                 </ul>
-                
+
+                <ul class="noticeList inquiryList">
+                </ul>
               </div>
-              <div id="inquiryPage"  class="listNumber">
+              <div class="listNumber">
+                <i class="fa-solid fa-angles-left"></i>
+                <i class="fa-solid fa-angle-left"></i>
+                <a href="#"><p>1</p></a>
+                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angles-right"></i>
               </div>
             </div>
           </div>
@@ -287,5 +299,4 @@
     <script src="/js/common.js"></script>
   </body>
   <script src="./centerPage.js"></script>
-  <script src="./test.js"></script>
 </html>
